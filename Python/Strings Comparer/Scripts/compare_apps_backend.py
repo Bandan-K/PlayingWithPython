@@ -104,8 +104,8 @@ def main():
     app_map = {"1": "customer", "2": "merchant", "3": "driver", "4": "picker"}
     app_type = app_map.get(choice, choice if choice else "customer")
     
-    android_file = os.path.join(source_dir, "strings.xml")
-    ios_file = os.path.join(source_dir, "Localizable.strings")
+    android_file = os.path.join(source_dir, f"{app_type}/strings.xml")
+    ios_file = os.path.join(source_dir, f"{app_type}/Localizable.strings")
     
     common_xlsx = os.path.join(excel_dir, "app-common-string.xlsx")
     app_xlsx = os.path.join(excel_dir, f"{app_type}-app-string.xlsx")

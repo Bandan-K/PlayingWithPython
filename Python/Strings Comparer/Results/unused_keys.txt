@@ -1,4 +1,0 @@
-sub_hesderhbading_image
-sub_hedcdading_pdf
-sub_hesdcvsading_camera
-description_trbnrtin_app_google

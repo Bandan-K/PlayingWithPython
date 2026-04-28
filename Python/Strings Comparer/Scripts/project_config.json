@@ -1,4 +1,4 @@
 {
-    "strings_file_path": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Resources/en.lproj/Localizable.strings",
-    "/Users/elluminati/Documents/Product/Hyze 2/driver": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Resources/en.lproj/Localizable.strings"
+    "/Users/elluminati/Documents/Product/Hyze 2/driver_strings": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Resources/en.lproj/Localizable.strings",
+    "/Users/elluminati/Documents/Product/Hyze 2/driver_vars": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Utility/LocalizeHelper/LocalizeKey.swift"
 }

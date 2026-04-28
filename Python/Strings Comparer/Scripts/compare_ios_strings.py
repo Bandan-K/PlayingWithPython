@@ -67,22 +67,6 @@ def get_android_mapping(file_path):
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     base_path = os.path.dirname(script_dir)
-    
-    excel_dir = os.path.join(base_path, 'ExcelData')
-    source_dir = os.path.join(base_path, 'SourceFiles')
-    result_dir = os.path.join(base_path, 'Results')
-    
-    ios_file = os.path.join(source_dir, 'iOSFile')
-    strings_file = os.path.join(source_dir, 'Localizable.strings')
-    android_file = os.path.join(source_dir, 'strings.xml')
-    output_file = os.path.join(result_dir, 'missing_keys.txt')
-
-    print("Re-parsing source files...")
-    ios_keys = extract_ios_keys(ios_file)
-    strings_keys = extract_localizable_keys(strings_file)
-    missing = sorted(list(ios_keys - strings_keys))
-    
-    print(f"Found {len(missing)} missing keys in Localizable.strings")
 
     # Interactive App Selection
     print("\nSelect App Type (default is customer):")
@@ -94,6 +78,22 @@ def main():
     
     app_map = {"1": "customer", "2": "merchant", "3": "driver", "4": "picker"}
     app_type = app_map.get(choice, choice if choice else "customer")
+    
+    excel_dir = os.path.join(base_path, 'ExcelData')
+    source_dir = os.path.join(base_path, 'SourceFiles')
+    result_dir = os.path.join(base_path, 'Results')
+    
+    ios_file = os.path.join(source_dir, f'{app_type}/iOSFile')
+    strings_file = os.path.join(source_dir, f'{app_type}/Localizable.strings')
+    android_file = os.path.join(source_dir, f'{app_type}/strings.xml')
+    output_file = os.path.join(result_dir, 'missing_keys.txt')
+
+    print("Re-parsing source files...")
+    ios_keys = extract_ios_keys(ios_file)
+    strings_keys = extract_localizable_keys(strings_file)
+    missing = sorted(list(ios_keys - strings_keys))
+    
+    print(f"Found {len(missing)} missing keys in Localizable.strings")
 
     common_xlsx = os.path.join(excel_dir, 'app-common-string.xlsx')
     app_xlsx = os.path.join(excel_dir, f'{app_type}-app-string.xlsx')
