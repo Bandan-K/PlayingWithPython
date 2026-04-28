@@ -1,0 +1,193 @@
+{
+    "data": {
+        "entity": {
+            "address": {
+                "_id": "68832d7cda607ed12f64cdbc",
+                "address": "7PCQ+6CQ, near Hotel Rasala, Rajkot, Gujarat 360005, India",
+                "city": "",
+                "countryCode": "IN",
+                "createdAt": "2025-07-25T07:08:44.246Z",
+                "floor": "",
+                "isAddressSelected": false,
+                "latitude": 22.270809944777895,
+                "longitude": 70.73867987841368,
+                "note": "",
+                "placeId": "ChIJt3bfEJXLWTkRWwgBdzgwSzE",
+                "postalCode": "",
+                "street": "",
+                "updatedAt": "2025-07-25T07:08:44.246Z"
+            },
+            "bookingIds": [
+                "6854ffaa65a33f3b76888325",
+                "687110cafd2d9d0e3e1d536f",
+                "687a1e04a6b1958d31a7854d",
+                "687a1ebba6b1958d31a785a7",
+                "687a20ef7e4e24c1cf7bea9f",
+                "687f5e04b957eb862370bc4f",
+                "688203e56502d45ae7beb8f3",
+                "688c5305a7661ace112cb36b",
+                "689499bfea8bcf7768a1fe6a",
+                "68949b19ea8bcf7768a1ff3c",
+                "68958d99ea8bcf7768a23773",
+                "68c2b56c79462cdf037845c7",
+                "68c2ba7c79462cdf037848f8",
+                "68c3e13c47ef0ec91a53b40e",
+                "68cbc6a91051236f44d6589b",
+                "690c82d6687ca75f3fed23fd",
+                "690c86a1687ca75f3fed2690",
+                "690c8898687ca75f3fed2898",
+                "690c899938f14d248cc0c10a",
+                "690c8a4538f14d248cc0c1e7",
+                "690c8b18687ca75f3fed2a8b",
+                "690c8b9938f14d248cc0c362",
+                "690c8bd938f14d248cc0c443",
+                "690c8ccf687ca75f3fed2cb4",
+                "690c929d687ca75f3fed349e",
+                "690d97b938f14d248cc0d429",
+                "690d99d638f14d248cc0d587",
+                "690d9c23687ca75f3fed42da",
+                "690da53e38f14d248cc0deee",
+                "69131b0f53d826872a30efa2"
+            ],
+            "cityId": "6852615684ee4dae666d21a9",
+            "countryCode": "IN",
+            "countryId": "685260dd84ee4dae666d2123",
+            "countryPhoneCode": "+91",
+            "credit": -24368.37,
+            "creditCurrencyCode": "INR",
+            "documentStatus": 30,
+            "email": "ios@gmail.com",
+            "firstName": "Ios",
+            "imageUrl": "provider_profile/17528396084634Bfj4p.jpeg",
+            "lastName": "Provider",
+            "location": {},
+            "loginBy": 1,
+            "phone": "1020304050",
+            "preferedLanguage": "en",
+            "profilePicStatus": 30,
+            "rate": 4.6923076923076925,
+            "rateCount": 13,
+            "referralDetail": {
+                "referralCode": "SCILRRZY",
+                "referralUse": 0
+            },
+            "scheduleBookingIds": [
+                "686f764f3fe65e8ae3027ba9"
+            ],
+            "selectedAddress": null,
+            "speakingLanguages": [],
+            "status": 6,
+            "subServiceIds": [
+                "68527d6f1eaf8dd65eafba20",
+                "68527d3a1eaf8dd65eafba09",
+                "6867750f97d9c30bc120aa78"
+            ],
+            "type": 3,
+            "uniqueId": 1
+        },
+        "setting": {
+            "appSetting": {
+                "forceUpdate": false,
+                "url": "https://apps.apple.com/us/app/domesticr-pro/id6747659546",
+                "version": "1.0.0"
+            },
+            "contactDetail": {
+                "address": "Forum 1, building G, 3rd floor, Santa Ana, CR 1001",
+                "email": "info@domesticr.com",
+                "phone": "72547744"
+            },
+            "creditTransferConfig": {
+                "isCustomerToCustomer": false,
+                "isCustomerToProvider": false,
+                "isProviderToCustomer": false,
+                "isProviderToProvider": false,
+                "transferUsing": [
+                    1
+                ]
+            },
+            "currencySign": "₹",
+            "decimalPointValue": 0,
+            "entitySetting": {
+                "deleteBy": [
+                    5
+                ],
+                "isAllowDeleteAccount": true,
+                "isMandatory": [
+                    1
+                ],
+                "isSkipLogin": false,
+                "isVerification": [],
+                "loginBlockDurationMinutes": 5,
+                "loginBy": {
+                    "email": [
+                        5
+                    ],
+                    "phone": [],
+                    "social": [
+                        6,
+                        7
+                    ]
+                },
+                "maxFailLoginAttempt": 3,
+                "otpBlockAction": "block",
+                "otpBlockDuration": 30,
+                "resendOtpLimit": 3,
+                "secOtpResendInterval": 30
+            },
+            "mapKey": {
+                "directionsApiKey": "",
+                "distanceMatrixApiKey": "",
+                "geocodingApiKey": "AIzaSyANj71vf_pjElCVnjaNk4Tlp0Tnl09JPec",
+                "mapKey": "AIzaSyANj71vf_pjElCVnjaNk4Tlp0Tnl09JPec",
+                "placesAutoCompleteApiKey": "AIzaSyANj71vf_pjElCVnjaNk4Tlp0Tnl09JPec"
+            },
+            "mapThemeSetting": {
+                "darkMode": "[{\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#212121\"}]},{\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#757575\"}]},{\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"color\":\"#212121\"}]},{\"featureType\":\"administrative\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#757575\"}]},{\"featureType\":\"administrative.country\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#9e9e9e\"}]},{\"featureType\":\"administrative.land_parcel\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"administrative.locality\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#bdbdbd\"}]},{\"featureType\":\"poi\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#757575\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#181818\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#616161\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"color\":\"#1b1b1b\"}]},{\"featureType\":\"road\",\"elementType\":\"geometry.fill\",\"stylers\":[{\"color\":\"#2c2c2c\"}]},{\"featureType\":\"road\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#8a8a8a\"}]},{\"featureType\":\"road.arterial\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#373737\"}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#3c3c3c\"}]},{\"featureType\":\"road.highway.controlled_access\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#4e4e4e\"}]},{\"featureType\":\"road.local\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#616161\"}]},{\"featureType\":\"transit\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#757575\"}]},{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#000000\"}]},{\"featureType\":\"water\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#3d3d3d\"}]}]",
+                "lightMode": "[{\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#f5f5f5\"}]},{\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#616161\"}]},{\"elementType\":\"labels.text.stroke\",\"stylers\":[{\"color\":\"#f5f5f5\"}]},{\"featureType\":\"administrative.land_parcel\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#bdbdbd\"}]},{\"featureType\":\"poi\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#eeeeee\"}]},{\"featureType\":\"poi\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#757575\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#e5e5e5\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#9e9e9e\"}]},{\"featureType\":\"road\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#ffffff\"}]},{\"featureType\":\"road.arterial\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#757575\"}]},{\"featureType\":\"road.highway\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#dadada\"}]},{\"featureType\":\"road.highway\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#616161\"}]},{\"featureType\":\"road.local\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#9e9e9e\"}]},{\"featureType\":\"transit.line\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#e5e5e5\"}]},{\"featureType\":\"transit.station\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#eeeeee\"}]},{\"featureType\":\"water\",\"elementType\":\"geometry\",\"stylers\":[{\"color\":\"#c9c9c9\"}]},{\"featureType\":\"water\",\"elementType\":\"labels.text.fill\",\"stylers\":[{\"color\":\"#9e9e9e\"}]}]"
+            },
+            "mapType": 1,
+            "maxPhoneLength": 10,
+            "minPhoneLength": 8,
+            "passwordRule": {
+                "minLength": 6,
+                "regEx": "^(?=.{6,})(?=.*\\d).*$",
+                "requireLowercase": false,
+                "requireNumbers": true,
+                "requireSpecial": false,
+                "requireUppercase": false
+            },
+            "privacyPolicyURL": "https://admin.domesticr.com/legal/provider-privacy-policy/IN",
+            "referralConfig": {
+                "isActive": true,
+                "maxReferralLimit": 5,
+                "referrerReward": 10,
+                "signupReward": 5
+            },
+            "rewardPointConfig": {},
+            "roundingMethod": 1,
+            "setCurrencySign": 1,
+            "termsAndConditionsURL": "https://admin.domesticr.com/legal/provider-terms-conditions/IN",
+            "themeSetting": {
+                "darkMode": {
+                    "colorBackground": "#202020",
+                    "colorPrimary": "#f5efd7",
+                    "colorSecondary": "#f15f5c",
+                    "colorSelectedText": "#484848",
+                    "colorTertiary": "#fdda5d",
+                    "colorText": "#eeeeee",
+                    "colorWarning": "#f9221e"
+                },
+                "lightMode": {
+                    "colorBackground": "#ffffff",
+                    "colorPrimary": "#0C1E43",
+                    "colorSecondary": "#F15F5C",
+                    "colorSelectedText": "#fbf9f9",
+                    "colorTertiary": "#EDB934",
+                    "colorText": "#3C3C3C",
+                    "colorWarning": "#D04812"
+                }
+            }
+        }
+    },
+    "message": "Details fetched successfully"
+}
