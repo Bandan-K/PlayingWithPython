@@ -1,5 +1,6 @@
 import re
 import os
+import xml.etree.ElementTree as ET
 from openpyxl import load_workbook
 
 def extract_ios_keys(file_path):
@@ -36,7 +37,6 @@ def get_excel_mapping(file_path):
     try:
         wb = load_workbook(file_path, data_only=True)
         sheet = wb.active
-        # Key in Column A (0), Value in Column C (2)
         for row in sheet.iter_rows(min_row=2, values_only=True):
             if len(row) >= 3:
                 key = str(row[0]).strip() if row[0] else None
@@ -45,6 +45,23 @@ def get_excel_mapping(file_path):
                     mapping[key] = value
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
+    return mapping
+
+def get_android_mapping(file_path):
+    mapping = {}
+    if not os.path.exists(file_path):
+        print(f"Warning: {file_path} not found")
+        return mapping
+    try:
+        tree = ET.parse(file_path)
+        root = tree.getroot()
+        for string in root.findall('string'):
+            name = string.get('name')
+            value = "".join(string.itertext()).strip() if name else None
+            if name:
+                mapping[name] = value
+    except Exception as e:
+        print(f"Error parsing Android XML: {e}")
     return mapping
 
 def main():
@@ -57,6 +74,7 @@ def main():
     
     ios_file = os.path.join(source_dir, 'iOSFile')
     strings_file = os.path.join(source_dir, 'Localizable.strings')
+    android_file = os.path.join(source_dir, 'strings.xml')
     output_file = os.path.join(result_dir, 'missing_keys.txt')
 
     print("Re-parsing source files...")
@@ -80,16 +98,26 @@ def main():
     common_xlsx = os.path.join(excel_dir, 'app-common-string.xlsx')
     app_xlsx = os.path.join(excel_dir, f'{app_type}-app-string.xlsx')
 
-    print(f"Searching values in {os.path.basename(common_xlsx)} and {os.path.basename(app_xlsx)}...")
+    print(f"Loading Excel mapping ({app_type})...")
     common_map = get_excel_mapping(common_xlsx)
     app_map_data = get_excel_mapping(app_xlsx)
-    
-    # Merge mappings (app-specific overrides common)
-    full_mapping = {**common_map, **app_map_data}
+    excel_mapping = {**common_map, **app_map_data}
+
+    print(f"Loading Android mapping (strings.xml)...")
+    android_mapping = get_android_mapping(android_file)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         for key in missing:
-            value = full_mapping.get(key, "")
+            # 1. Check Excel
+            value = excel_mapping.get(key)
+            # 2. Fallback to Android XML
+            if not value and key in android_mapping:
+                value = android_mapping[key]
+            
+            # Final fallback to empty string
+            if value is None:
+                value = ""
+                
             f.write(f'"{key}" = "{value}";\n')
 
     print(f"\nDone! Updated results saved to {output_file}")

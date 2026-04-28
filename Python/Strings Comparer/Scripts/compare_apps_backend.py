@@ -94,12 +94,15 @@ def main():
     result_dir = os.path.join(base_path, "Results")
     
     # Input app type
-    print("Available app types: customer, driver, merchant, picker")
-    app_type = input("Enter app type to compare with backend: ").strip().lower()
+    print("\nSelect App Type (default is customer):")
+    print("1. customer")
+    print("2. merchant")
+    print("3. driver")
+    print("4. picker")
+    choice = input("Enter number or name [customer]: ").strip().lower()
     
-    # Map 'user' to 'customer'
-    if app_type == "user":
-        app_type = "customer"
+    app_map = {"1": "customer", "2": "merchant", "3": "driver", "4": "picker"}
+    app_type = app_map.get(choice, choice if choice else "customer")
     
     android_file = os.path.join(source_dir, "strings.xml")
     ios_file = os.path.join(source_dir, "Localizable.strings")
