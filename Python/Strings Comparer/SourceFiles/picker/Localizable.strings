@@ -21,14 +21,8 @@
 "error_please_select_profile_type" = "Please select profile type";
 "button_ok" = "ok";
 // MARK: Authentiacation
-"error_user_not_found" = "User not found";
 "sub_heading_login_with" = "Login with";
-"sub_heading_login_with_social_account" = "Login with Social Account";
 "description_change_your_language_preference" = "Change your Language preference";
-"button_continue_with_facebook" = "Continue with Facebook";
-"button_continue_with_google" = "Continue with Google";
-"description_dont_have_an_account" = "Don’t have an account?";
-"button_create_an_account" = "Create an Account";
 "hint_email" = "Email";
 "hint_password" = "Password";
 "hint_phone_number" = "Phone Number";
@@ -40,7 +34,6 @@
 "description_enter_otp" = "Enter the OTP sent to";
 "description_enter_your_old_password" = "Enter your old password to verify your account";
 "description_have_not_received_otp" = "Haven't received OTP?";
-"description_select_your_verbal_language" = "Select your verbal language";
 "button_resend_otp" = "Resend OTP";
 "error_please_enter_password" = "Please enter password";
 "error_please_enter_old_password" = "Please enter old password";
@@ -56,23 +49,15 @@
 "error_please_enter_email" = "Please enter email";
 "error_please_select_country_phone_code" = "Please select country phone code";
 "error_please_select_country" = "Please select country";
-"error_please_select_city" = "Please select city";
 "error_please_enter_phone_number" = "Please enter phone number";
-"error_please_agree_the_terms_and_conditions_to_continue" = "Please agree the terms and conditions to continue";
 "error_please_enter_otp" = "Please enter OTP";
 "error_please_enter_phone_number_otp" = "Please enter phone number OTP";
 "error_please_enter_email_otp" = "Please enter email OTP";
-"heading_create_account" = "Create Account";
 "hint_first_name" = "First Name";
 "hint_last_name" = "Last Name";
 "hint_country" = "Country";
-"hint_city" = "City";
 "description_terms_conditions" = "Terms & Conditions";
 "description_privacy_policy" = "Privacy Policy";
-"description_do_have_account" = "Do you have an account?";
-"button_login" = "Login";
-"description_register_agree" = "By continuing, I confirm that I have read and agree to the [{{_TERM_CONDITION}}]({{_TERM_LINK}}) and [{{_PRIVACY_POLICY}}]({{_PRIVACY_LINK}})";
-"button_login_with_otp" = "Login in with OTP";
 "heading_forgot_password" = "Forgot Password?";
 "description_forgot_password" = "Enter the email address or phone you used to register";
 "button_reset_password" = "Reset Password";
@@ -81,17 +66,10 @@
 "button_verify_proceed" = "Verify & Proceed";
 "error_please_enter_confirm_password" = "Please enter confirm password";
 "error_password_and_confirm_password_must_be_same" = "Password and confirm password must be same";
-"heading_referral" = "Referral";
-"description_referral_code" = "You can add referral code provided by your friend here, to get free credits. If you do not have one or don't want to insert then just click on Skip button below.";
-"hint_enter_referral_code" = "Enter referral code";
-"error_please_enter_referral_code" = "Please enter referral code";
 "hint_confirm_password" = "Confirm Password";
 "button_set_password" = "Set Password";
 // MARK: Country & City Selection
 "heading_countries" = "Countries";
-"heading_cities" = "Cities";
-"hint_search_city" = "Search City";
-"hint_search_country" = "Search Country";
 
 "description_logout" = "Are you sure you want to quit the app?";
 "button_logout" = "Logout";
@@ -108,7 +86,6 @@
 "button_offline" = "Cyaa! Tommorrow";
 "button_online" = "Go Online";
 "description_today_earning" = "Today's Earning";
-"description_scan_qrcode_inside_the_store" = "Scan QR Code inside/nthe store";
 "description_avg_order_picked_in_hourday" = "Avg. Order Picked in hour/day";
 "description_avg_time_to_pick_order" = "Avg. time to pick order ";
 "error_not_valid_merchant_qr_code" = "Please scan valid merchant QR code";
@@ -128,11 +105,6 @@
 "heading_contact_us" = "Contact Us";
 // MARK: Settings
 "sub_heading_settings" = "Settings";
-"heading_authentication_options" = "Authentication Options :";
-"heading_delete_account" = "Delete Account";
-"sub_heading_delete_account" = "Delete Account";
-"description_delete_account" = "Are you sure you want to delete account?";
-"button_yes_delete_account" = "Yes, Delete";
 "heading_logout" = "Logout";
 "sub_heading_logout" = "Logout";
 "description_app_version" = "App Version";
@@ -152,7 +124,6 @@
 // MARK: Documents
 "error_no_document_found" = "Document not found";
 "description_id_no" = "ID No:";
-"sub_heading_edit" = "Edit";
 "error_please_update_document_details" = "Please update any one detail to reupload the document";
 "error_please_select_document_img" = "Please select document image";
 "error_please_document_id" = "Please enter document id";
@@ -185,7 +156,6 @@
 "description_scan_item" = "Scan Item";
 "description_enter_manually" = "Enter manually";
 "error_enter_barcode" = "Please enter barcode.";
-"error_enter_valid_barcode" = "Please enter valid barcode.";
 "button_apply" = "Apply";
 "button_start_task" = "Start Task";
 "button_next" = "Next";
@@ -202,9 +172,6 @@
 "description_add_quantity" = "Add Quantity";
 "button_swipe_to_scan" = "Swipe to Scan";
 "description_pickup_time" = "Pickup in {{_PICKUP_TIME}} mins";
-"description_booking_completed_successfully" = "Booking completed successfully";
-"description_booking_cancelled_by_system" = "Booking is cancelled by system";
-"description_booking_is_accepted_by_other_picker" = "Booking is accepted by other picker";
 // MARK: - HISTORY
 "description_today" = "Today";
 "description_yesterday" = "Yesterday";
@@ -230,13 +197,6 @@
 "description_you_earned_by_accepting_the_booking" = "You earned by accepting the booking";
 "description_booking_cancellation_reason" = "Booking Cancellation Reason";
 // MARK: - DYNAMIC KEYS
-"description_dynamic_key_g" = "Gram";
-"description_dynamic_key_ml" = "ml";
-"description_dynamic_key_kg" = "Kilo";
-"description_dynamic_key_l" = "Litre";
-"description_dynamic_key_piece" = "Piece";
-"description_dynamic_key_inch" = "Inch";
-"description_dynamic_key_cm" = "cm";
 // MARK: - MY BOOKING
 "heading_my_booking" = "My Bookings";
 "description_upcoming_booking" = "Upcoming bookings";
@@ -244,7 +204,6 @@
 // MARK: - EARNINGS
 "description_active_hours" = "Active Hours";
 "description_items_picked" = "Items Picked";
-"description_complaints" = "Complaints";
 "sub_heading_earning_statistics" = "Booking Statistics";
 "description_earning" = "Earning";
 "button_view_details" = "View Details";
@@ -274,11 +233,9 @@
 "description_nestpay" = "NestPay";
 "description_qicard" = "QiCard";
 "description_paymob" = "Paymob";
-"description_apple_pay" = "Apple Pay";
 "sub_heading_payment_methods" = "Payment Methods";
 "description_bank" = "Bank";
 "button_add_new_card" = "Add New Card";
-"button_add_new_bank" = "Add Bank";
 "description_add_bank" = "Add Bank";
 "heading_delete_bank" = "Delete Bank";
 "heading_delete_card" = "Delete Card";
@@ -335,10 +292,8 @@
 "heading_wallet_history" = "Wallet History";
 "error_no_wallet_history_found" = "Wallet history not found";
 "description_history_transaction_id" = "TRANSACTION ID {{_TRANSACTION_ID}}";
-"error_please_enter_valid_amount" = "Please enter valid amount";
 "error_please_enter_wallet_amount" = "Please enter wallet amount";
 "error_please_select_card" = "Please select card";
-"sub_heading_add" = "Add";
 "heading_camera_permition_alert" = "Camera Permission Required";
 "description_heading_camera_permition_msg" = "To enhance your experience, we require access to your camera. Kindly allow camera permissions to continue.";
 "description_payu" = "PayU";
@@ -349,3 +304,6 @@
 "description_rejected" = "Rejected";
 "description_doc_expired" = "Expired";
 "button_done" = "Done";
+
+"error_phone_not_valid" = "Please enter valid phone number";
+"error_please_enter_valid_email" = "Please enter valid email";

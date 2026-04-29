@@ -1,7 +1,7 @@
 # ==========================================
 # SETTINGS - UPDATE THESE PATHS IF NEEDED
 # ==========================================
-PROJECT_ROOT = "/Users/elluminati/Documents/Product/Hyze 2/merchant"
+PROJECT_ROOT = "/Users/elluminati/Documents/Product/Hyze2/picker"
 # ==========================================
 
 import os
@@ -33,9 +33,33 @@ def extract_vars_from_swift_file(file_path):
 
 def find_file_in_project(root_path, filenames):
     print(f"Searching for {filenames} in {root_path}...")
-    for root, dirs, files in os.walk(root_path):
-        for filename in filenames:
-            if filename in files: return os.path.join(root, filename)
+    
+    # Check priority folders first to save time
+    priority_dirs = ["Resources", "Utility"]
+    for p_dir in priority_dirs:
+        p_path = os.path.join(root_path, p_dir)
+        if os.path.exists(p_path):
+            try:
+                for root, dirs, files in os.walk(p_path):
+                    if any(skip in root for skip in [".git", ".build", "DerivedData", "Pods"]):
+                        dirs[:] = []
+                        continue
+                    for filename in filenames:
+                        if filename in files: return os.path.join(root, filename)
+            except PermissionError:
+                print(f"[!] Warning: Permission denied accessing {p_path}")
+
+    # Fallback to full search but with proper skipping
+    try:
+        for root, dirs, files in os.walk(root_path):
+            if any(skip in root for skip in [".git", ".build", "DerivedData", "Pods", ".xcodeproj", ".xcassets"]):
+                dirs[:] = [] 
+                continue
+                
+            for filename in filenames:
+                if filename in files: return os.path.join(root, filename)
+    except PermissionError:
+        print(f"[!] Error: Permission denied accessing {root_path}. Please check Full Disk Access.")
     return None
 
 def move_lines_to_bottom(file_path, lines_to_move, label):
@@ -60,6 +84,15 @@ def move_lines_to_bottom(file_path, lines_to_move, label):
     print(f"Moved {len(found_lines_to_move)} lines to bottom of {os.path.basename(file_path)}")
 
 def main():
+    if not os.path.exists(PROJECT_ROOT):
+        print(f"Error: PROJECT_ROOT does not exist: {PROJECT_ROOT}")
+        return
+    
+    if not os.access(PROJECT_ROOT, os.R_OK):
+        print(f"[!] CRITICAL: Permission denied for PROJECT_ROOT: {PROJECT_ROOT}")
+        print("Please grant Full Disk Access to Terminal/Python in System Settings.")
+        return
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_path = os.path.join(script_dir, "project_config.json")
     
@@ -81,8 +114,7 @@ def main():
         
     vars_file = config.get(vars_key)
     if not vars_file or not os.path.exists(vars_file):
-        # Look for either name
-        vars_file = find_file_in_project(PROJECT_ROOT, ["LocalizeKey.swift", "iOSFile", "iOSFile.swift"])
+        vars_file = find_file_in_project(PROJECT_ROOT, ["LocalizeKey.swift"])
         if vars_file: config[vars_key] = vars_file
         
     # Save config if updated
@@ -90,24 +122,30 @@ def main():
         json.dump(config, f, indent=4)
 
     if not strings_file or not vars_file:
-        print(f"Error: Could not find required files in {PROJECT_ROOT}.")
-        print(f"Strings: {strings_file}")
-        print(f"Vars: {vars_file}")
+        print(f"Error: Could not find required files in {PROJECT_ROOT}")
+        print(f"Strings File Found: {strings_file}")
+        print(f"Vars File Found: {vars_file}")
         return
 
-    # Extensions
+    # Index project
     exts = {".swift", ".m", ".h", ".storyboard", ".xib"}
     
     print("Indexing project code...")
     all_code = ""
     for root, dirs, files in os.walk(PROJECT_ROOT):
-        if any(skip in root for skip in ["Pods", ".git", ".xcodeproj", ".xcassets"]): continue
-        for file in files:
-            if os.path.splitext(file)[1].lower() in exts:
-                try:
+        # Stop walking into heavy junk folders
+        if any(skip in root for skip in [".git", ".xcodeproj", ".xcassets", "DerivedData", ".build", "Pods"]):
+            dirs[:] = []
+            continue
+            
+        try:
+            for file in files:
+                if os.path.splitext(file)[1].lower() in exts:
                     with open(os.path.join(root, file), 'r', encoding='utf-8', errors='ignore') as f:
                         all_code += f.read() + "\n"
-                except: pass
+        except PermissionError:
+            print(f"[!] Warning: Skipping folder due to permissions: {root}")
+        except: pass
 
     # 1. Analyze Swift Variables
     vars_data = extract_vars_from_swift_file(vars_file)

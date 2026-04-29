@@ -1,0 +1,2639 @@
+├── NotificationService
+│   ├── Info.plist
+│   └── NotificationService.swift
+├── QCommercePicker
+│   ├── APIManager
+│   │   └── APIServices
+│   │       ├── APIBaseURL.swift
+│   │       ├── ApiEndUrl.swift
+│   │       ├── APIHttpMethods.swift
+│   │       ├── APIRequestType.swift
+│   │       ├── APIService+Combine.swift
+│   │       └── HUNetworkError.swift
+│   ├── App Start
+│   │   ├── AppDelegate.swift
+│   │   └── QCommercePickerApp.swift
+│   ├── AppConstant
+│   │   ├── ColorConstant.swift
+│   │   ├── Constants.swift
+│   │   └── ImageAssets.swift
+│   ├── AppCustomViews
+│   │   ├── AlertView
+│   │   │   ├── Toast.swift
+│   │   │   ├── ToastModifier.swift
+│   │   │   ├── ToastStyle.swift
+│   │   │   ├── ToastView.swift
+│   │   │   ├── View_Glow.swift
+│   │   │   └── View_toastView.swift
+│   │   ├── AsyncImageHelper
+│   │   │   ├── GIFURLLoader.swift
+│   │   │   ├── KingfisherImage.swift
+│   │   │   └── UrlImage.swift
+│   │   ├── BackgroundCleanerView.swift
+│   │   ├── BackgroundModifier.swift
+│   │   ├── BottomSheetTitleView.swift
+│   │   ├── Button
+│   │   │   ├── AppBorderButtonView.swift
+│   │   │   ├── AppButtonView.swift
+│   │   │   ├── BothSideTextButton.swift
+│   │   │   ├── ButtonStyle
+│   │   │   │   └── RoundedBGButtonStyleFit.swift
+│   │   │   └── ButtonView.swift
+│   │   ├── CommonWebViewController.swift
+│   │   ├── CornerRadiusModifier.swift
+│   │   ├── CounterView.swift
+│   │   ├── CustomAlertPopUp
+│   │   │   ├── BatteryWarningView.swift
+│   │   │   └── CustomAlertBottomSheet.swift
+│   │   ├── CustomFullScreenCover.swift
+│   │   ├── DashedLine.swift
+│   │   ├── DateTimePickerView.swift
+│   │   ├── DocumentPicker.swift
+│   │   ├── GIFPlayes
+│   │   │   ├── GIFPlayerView.swift
+│   │   │   └── SwiftUIGIFPlayerView.swift
+│   │   ├── HeaderView.swift
+│   │   ├── HTMLFormattedText.swift
+│   │   ├── ImageCache
+│   │   │   └── ImageCache.swift
+│   │   ├── ImageGifView.swift
+│   │   ├── ImagePicker.swift
+│   │   ├── KIOTP
+│   │   │   ├── KeyboardHeightHelper.swift
+│   │   │   ├── KIOTPView.swift
+│   │   │   └── RoundedBorderModifier.swift
+│   │   ├── LocationPermissionView.swift
+│   │   ├── NavigationBarView.swift
+│   │   ├── NetworkUtility.swift
+│   │   ├── NoInternetConnectionView.swift
+│   │   ├── NotificationCountView.swift
+│   │   ├── OptionView
+│   │   │   ├── CheckboxRowView.swift
+│   │   │   ├── OptionButton.swift
+│   │   │   └── RadioButton.swift
+│   │   ├── OverlayView
+│   │   │   └── BlackGradientOverlay.swift
+│   │   ├── PaddingModifier.swift
+│   │   ├── PlacesTagView.swift
+│   │   ├── QRscanner
+│   │   │   ├── QRScanner+ViewController.swift
+│   │   │   ├── QRScannerView.swift
+│   │   │   └── QRScannerViewModel.swift
+│   │   ├── RoundCorner.swift
+│   │   ├── ScaledFont.swift
+│   │   ├── ScreenLoader.swift
+│   │   ├── SelectionBottomSheetView.swift
+│   │   ├── ServerDialog
+│   │   │   ├── Model
+│   │   │   │   └── ServerDialogListModel.swift
+│   │   │   ├── View
+│   │   │   │   └── ServerDialogView.swift
+│   │   │   └── ViewModel
+│   │   │       └── ServerDialogViewModel.swift
+│   │   ├── TextField
+│   │   │   ├── AppDropDownTextField.swift
+│   │   │   ├── AppSecureTextField.swift
+│   │   │   ├── AppTextField.swift
+│   │   │   ├── AppTextView.swift
+│   │   │   └── TextFieldView.swift
+│   │   ├── Timer
+│   │   │   ├── AppTimerView.swift
+│   │   │   └── ViewModel
+│   │   │       └── AppTimeCounterViewModel.swift
+│   │   ├── TransparentBackground.swift
+│   │   └── VerifyPhoneNumber
+│   │       ├── VerifyPhoneNumberAndEmailView.swift
+│   │       └── VerifyPhoneNumberAndEmailViewModel.swift
+│   ├── CustomModifier
+│   │   └── CustomModifier.swift
+│   ├── Extensions
+│   │   ├── Data+Extension.swift
+│   │   ├── Date+Extension.swift
+│   │   ├── Double+Extension.swift
+│   │   ├── Encodable+Extension.swift
+│   │   ├── Keyboard+Extension.swift
+│   │   ├── NotificationName+Extension.swift
+│   │   ├── String+Extension.swift
+│   │   ├── UIColor+Extension.swift
+│   │   ├── UIScreen+Extension.swift
+│   │   ├── View+Extension.swift
+│   │   └── Window+Extension.swift
+│   ├── Info.plist
+│   ├── Modules
+│   │   ├── Authentication
+│   │   │   ├── ForgotPassword
+│   │   │   │   ├── View
+│   │   │   │   │   └── ForgotPasswordSendOTPView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── ForgotPasswordViewModel.swift
+│   │   │   ├── LaunchScreen
+│   │   │   │   ├── View
+│   │   │   │   │   ├── Launch Screen.storyboard
+│   │   │   │   │   └── LaunchScreenView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── LaunchScreenViewModel.swift
+│   │   │   ├── Login
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── LoginApiRequest.swift
+│   │   │   │   │   │   └── LoginRequestModel.swift
+│   │   │   │   │   └── Response
+│   │   │   │   │       └── LoginResponseModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── LoginPasswordView.swift
+│   │   │   │   └── View Model
+│   │   │   │       └── LoginViewModel.swift
+│   │   │   ├── Logout
+│   │   │   │   └── View
+│   │   │   │       └── LogoutBottomSheet.swift
+│   │   │   ├── OTP
+│   │   │   │   ├── Model
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── OtpRequestApi.swift
+│   │   │   │   │       └── VerifyOtpRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── OTPBottomSheetView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── OTPViewModel.swift
+│   │   │   ├── SetPassword
+│   │   │   │   ├── Model
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── SetPasswordRequest.swift
+│   │   │   │   │       └── SetPasswordRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── SetPasswordView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── SetPasswordViewModel.swift
+│   │   │   └── VerifyPassword
+│   │   │       └── VerifyPasswordBottomView.swift
+│   │   ├── CommonPaystackVIew.swift
+│   │   ├── Documents
+│   │   │   ├── Model
+│   │   │   │   ├── Request
+│   │   │   │   │   ├── DocumentApiRequest .swift
+│   │   │   │   │   └── DocumentRequestParam.swift
+│   │   │   │   └── Response
+│   │   │   │       ├── DocumentDataModel.swift
+│   │   │   │       └── DocumentListResponse.swift
+│   │   │   ├── View
+│   │   │   │   ├── AddEditDoc.swift
+│   │   │   │   ├── CustomViews
+│   │   │   │   │   └── DocumentView.swift
+│   │   │   │   └── DocumentsListView.swift
+│   │   │   └── ViewModel
+│   │   │       ├── AddEditDocViewModel.swift
+│   │   │       └── DocumentsListViewModel.swift
+│   │   ├── Earnings
+│   │   │   ├── Model
+│   │   │   │   ├── EarningPassDataModel.swift
+│   │   │   │   ├── RequestModel
+│   │   │   │   │   ├── EarningApiRequest.swift
+│   │   │   │   │   └── EarningRequestModel.swift
+│   │   │   │   └── ResponseModel
+│   │   │   │       └── EarningResponseModel.swift
+│   │   │   ├── View
+│   │   │   │   ├── DailyEarningRowView.swift
+│   │   │   │   ├── EarningsView.swift
+│   │   │   │   └── TripStatisticsRowView.swift
+│   │   │   └── ViewModel
+│   │   │       └── EarningsViewModel.swift
+│   │   ├── History
+│   │   │   ├── Model
+│   │   │   │   ├── HistoryData.swift
+│   │   │   │   ├── Request
+│   │   │   │   │   ├── BookingHistoryRequest.swift
+│   │   │   │   │   └── BookingHistoryRequestParam.swift
+│   │   │   │   └── Response
+│   │   │   │       ├── BookingHistoryDetailModel.swift
+│   │   │   │       └── BookingHistoryModel.swift
+│   │   │   ├── View
+│   │   │   │   ├── BookingHistoryDetailsView.swift
+│   │   │   │   ├── BookingHistoryFilterView.swift
+│   │   │   │   ├── BookingHistoryListView.swift
+│   │   │   │   ├── CustomeViews
+│   │   │   │   │   └── BookingHistoryListCardView.swift
+│   │   │   │   └── HistoryListShimmerView.swift
+│   │   │   └── ViewModel
+│   │   │       ├── BookingHistoryDetailsViewModel.swift
+│   │   │       ├── BookingHistoryFilterViewModel.swift
+│   │   │       └── BookingHistoryViewModel.swift
+│   │   ├── Home
+│   │   │   ├── Home
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── HomeApiRequest.swift
+│   │   │   │   │   └── HomeRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── HomeMerchantBottomView.swift
+│   │   │   │   │   └── HomeView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── HomeViewModel.swift
+│   │   │   ├── Missing Information
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── GetMissingInformationModel.swift
+│   │   │   │   │   └── MissingInfoModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── MissingInformationBottomSheet.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── MissingInformationViewModel.swift
+│   │   │   └── Restriction View
+│   │   │       ├── View
+│   │   │       │   └── RestrictionView.swift
+│   │   │       └── ViewModel
+│   │   │           └── RestrictionViewModel.swift
+│   │   ├── Menu
+│   │   │   └── SideMenu
+│   │   │       ├── Model
+│   │   │       │   ├── ResponseModel
+│   │   │       │   │   └── SocketResponseModel.swift
+│   │   │       │   └── SidemenuData.swift
+│   │   │       ├── View
+│   │   │       │   ├── MainSidemenuTabbedView.swift
+│   │   │       │   ├── SideMenu.swift
+│   │   │       │   └── SideMenuView.swift
+│   │   │       └── ViewModel
+│   │   │           ├── MainSideMenuViewModel.swift
+│   │   │           └── SocketViewModel.swift
+│   │   ├── My Booking
+│   │   │   ├── Model
+│   │   │   │   └── MyBookingListModel.swift
+│   │   │   ├── View
+│   │   │   │   ├── MyBookingsListCardView.swift
+│   │   │   │   ├── MyBookingsListShimmerView.swift
+│   │   │   │   └── MyBookingsListView.swift
+│   │   │   └── ViewModel
+│   │   │       └── MyBookingsListViewModel.swift
+│   │   ├── Notification
+│   │   │   ├── Model
+│   │   │   │   ├── Request
+│   │   │   │   │   └── NotificationRequestParam.swift
+│   │   │   │   └── Response
+│   │   │   │       └── NotificationListResponse.swift
+│   │   │   ├── View
+│   │   │   │   ├── NotificationListCardView.swift
+│   │   │   │   └── NotificationListView.swift
+│   │   │   └── ViewModel
+│   │   │       └── NotificationsViewModel.swift
+│   │   ├── Order
+│   │   │   ├── Model
+│   │   │   │   ├── BookingApiRequest.swift
+│   │   │   │   ├── OrderDetailResponseModel.swift
+│   │   │   │   └── OrderRequestModels.swift
+│   │   │   ├── View
+│   │   │   │   ├── CustomView
+│   │   │   │   │   ├── ManageQuantityView.swift
+│   │   │   │   │   ├── OrderDetailedDialogView.swift
+│   │   │   │   │   ├── OrderDetailsHeaderView.swift
+│   │   │   │   │   ├── OrderItemListView.swift
+│   │   │   │   │   └── ProductCardView.swift
+│   │   │   │   ├── OrderCompletionProcessView.swift
+│   │   │   │   ├── OrderProductInfoView.swift
+│   │   │   │   └── OrderRequestDetailsView.swift
+│   │   │   └── ViewModel
+│   │   │       ├── OrderCompletionViewModel.swift
+│   │   │       └── OrderRequestDetailsViewModel.swift
+│   │   ├── Payment
+│   │   │   ├── AddCardDetail
+│   │   │   │   ├── View
+│   │   │   │   │   └── AddCardDetailsView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── AddCardDetailViewModel.swift
+│   │   │   ├── AddWalletAmount
+│   │   │   │   ├── Model
+│   │   │   │   │   └── SocketGetUpdateCredit.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── AddWalletAmount.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── AddWalletAmountViewModel.swift
+│   │   │   ├── Credit Withdrawal
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── CreditWithdrawalHistoryResponse.swift
+│   │   │   │   │   ├── CreditWithdrawalTaxResponse.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── CreditWithdrawalRequest.swift
+│   │   │   │   │       └── CreditWithdrawParams.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CreditWithdrawalBottomSheetView.swift
+│   │   │   │   │   └── CreditWithdrawHistoryView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── CreditWithdrawalViewModel.swift
+│   │   │   │       └── CreditWithdrawHistoryViewModel.swift
+│   │   │   ├── Payment Manager
+│   │   │   │   ├── ApplePayManager.swift
+│   │   │   │   ├── Bank
+│   │   │   │   │   └── Model
+│   │   │   │   │       ├── RequestModel
+│   │   │   │   │       │   └── AddBankRequest.swift
+│   │   │   │   │       └── ResponseModel
+│   │   │   │   │           ├── AddBankResponse.swift
+│   │   │   │   │           └── BankAccountListingResponse.swift
+│   │   │   │   ├── PaymentIntentRequest.swift
+│   │   │   │   ├── PaymentIntentRequestModel.swift
+│   │   │   │   ├── PaymentIntentResponse.swift
+│   │   │   │   ├── PaymentManager.swift
+│   │   │   │   └── Stripe
+│   │   │   │       ├── Model
+│   │   │   │       │   ├── RequestModel
+│   │   │   │       │   │   ├── StripeApiRequest.swift
+│   │   │   │       │   │   └── StripeCardParam.swift
+│   │   │   │       │   └── ResponseModel
+│   │   │   │       │       ├── StripeGetIntentModel.swift
+│   │   │   │       │       └── StripeListCardModel.swift
+│   │   │   │       ├── PaymentApiRequest.swift
+│   │   │   │       └── ViewModel
+│   │   │   │           └── StripePaymentViewModel.swift
+│   │   │   ├── Wallet
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── PaymentGatewayResponse.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       └── PaymentGatewayRequest.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CustomViews
+│   │   │   │   │   │   ├── AddNewCardButtonView.swift
+│   │   │   │   │   │   └── PaymentOptionCardView.swift
+│   │   │   │   │   └── WalletView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── PaymentGatewaySelectionViewModel.swift
+│   │   │   │       └── PaymentViewModel.swift
+│   │   │   └── WalletHistory
+│   │   │       ├── Model
+│   │   │       │   ├── Request
+│   │   │       │   │   ├── WalletHistoryParam.swift
+│   │   │       │   │   └── WalletHistoryRequest.swift
+│   │   │       │   └── WalletHistoryResponse.swift
+│   │   │       ├── View
+│   │   │       │   ├── HistoryListCardView.swift
+│   │   │       │   └── WalletHistoryView.swift
+│   │   │       └── ViewModel
+│   │   │           └── WalletHistoryViewModel.swift
+│   │   ├── Profile
+│   │   │   ├── Model
+│   │   │   │   └── RequestModel
+│   │   │   │       └── Request
+│   │   │   │           ├── ProfileRequest.swift
+│   │   │   │           └── ProfileRequestModel.swift
+│   │   │   ├── View
+│   │   │   │   └── ProfileView.swift
+│   │   │   └── View Model
+│   │   │       └── ProfileViewModel.swift
+│   │   └── Settings
+│   │       ├── Model
+│   │       │   ├── RequestModel
+│   │       │   │   ├── SettingApiRequest.swift
+│   │       │   │   └── SettingRequestModel.swift
+│   │       │   └── ResponseModel
+│   │       │       ├── EmergencyContactResponseModel.swift
+│   │       │       └── GoingToResposeModel.swift
+│   │       ├── View
+│   │       │   └── SettingsView.swift
+│   │       └── ViewModel
+│   │           ├── SettingsViewModel.swift
+│   │           └── SettingToggleViewModel.swift
+│   ├── Other
+│   │   ├── AppUpdateDailog
+│   │   │   └── View
+│   │   │       └── AppUpdateDailogView.swift
+│   │   ├── ChangeLanguage
+│   │   │   ├── Model
+│   │   │   │   ├── LanguageSelection.swift
+│   │   │   │   ├── Request
+│   │   │   │   │   └── UpdateLanguageParam.swift
+│   │   │   │   └── Response
+│   │   │   │       └── GetLanguageModel.swift
+│   │   │   ├── View
+│   │   │   │   └── ChangeLanguageBottomSheetView.swift
+│   │   │   └── ViewModel
+│   │   │       └── ChnageLanguageBottomSheetViewModel.swift
+│   │   ├── Contact Us
+│   │   │   └── ContactUsView.swift
+│   │   └── CountryCodeView
+│   │       ├── Model
+│   │       │   ├── RequestModel
+│   │       │   │   ├── CountryListRequest.swift
+│   │       │   │   └── CountryListRequestParam.swift
+│   │       │   └── ResponseModel
+│   │       │       └── CountryListResponse.swift
+│   │       ├── View
+│   │       │   ├── CountryCodeView.swift
+│   │       │   └── MultiplePhoneCodeBottomSheet.swift
+│   │       └── ViewModel
+│   │           └── CountryCodeViewModel.swift
+│   ├── Persistence
+│   │   └── UserDefaults.swift
+│   ├── Preview Content
+│   │   └── Preview Assets.xcassets
+│   │       └── Contents.json
+│   ├── QCommercePicker.entitlements
+│   ├── Rajkot.gpx
+│   ├── Resources
+│   │   ├── Assets.xcassets
+│   │   │   ├── AccentColor.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── AppIcon.appiconset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── picker_appicon.png
+│   │   │   ├── Contents.json
+│   │   │   ├── icAlert.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_alert.svg
+│   │   │   ├── icAmountMins.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_amount_mins.svg
+│   │   │   ├── icAmountPlus.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_amount_plus.svg
+│   │   │   ├── icArrowDown.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── fe_arrow-up.svg
+│   │   │   ├── icArrowDownLight.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_arrow_down.svg
+│   │   │   ├── icArrowForword.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_arrow_forword.svg
+│   │   │   ├── icArrowRight.imageset
+│   │   │   │   ├── arrow-right 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBack.imageset
+│   │   │   │   ├── back.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBag.imageset
+│   │   │   │   ├── bag-01 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBell.imageset
+│   │   │   │   ├── bell (1) 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBtnScanner.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── scanner-01 1.svg
+│   │   │   ├── icCalenderPicker.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_calender_picker.svg
+│   │   │   ├── icCall.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_call.svg
+│   │   │   ├── icCancel.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_cancel.svg
+│   │   │   ├── icCancelledTrip.imageset
+│   │   │   │   ├── cancelled_trip.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icCard.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_card.svg
+│   │   │   ├── icChat.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_chat.svg
+│   │   │   ├── icCircleChecked.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_circle_empty.svg
+│   │   │   ├── icCircleEmpty.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.svg
+│   │   │   ├── icContactUs.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_contact_us.svg
+│   │   │   ├── icCrossRound.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_cross_round.svg
+│   │   │   ├── icDelete.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_delete.svg
+│   │   │   ├── icDoc.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_doc.svg
+│   │   │   ├── icEarning.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_earning.svg
+│   │   │   ├── icFastForward.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── fast-forward-01 1.svg
+│   │   │   ├── icFilter.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_filter.svg
+│   │   │   ├── icHeaderLine.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── line.svg
+│   │   │   ├── icMail.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_mail.svg
+│   │   │   ├── icMenu.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── menu-bar 1.svg
+│   │   │   ├── icMenuContactUs.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_contact_us.svg
+│   │   │   ├── icMenuDocuments.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_documents.svg
+│   │   │   ├── icMenuHistory.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_history.svg
+│   │   │   ├── icMenuMybookings.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_mybookings.svg
+│   │   │   ├── icMenuPayment.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_wallet.svg
+│   │   │   ├── icMenuSettings.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_settings.svg
+│   │   │   ├── icPdf.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── pdf_file.svg
+│   │   │   ├── icPlusRound.imageset
+│   │   │   │   ├── add 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icScanner.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── scan_frame-01 2.svg
+│   │   │   ├── icSearch.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_search.svg
+│   │   │   ├── icSquareCheked.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── evaCheckmarkSquare2Fill0.svg
+│   │   │   ├── icSquareEmpty.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Rectangle 39.svg
+│   │   │   ├── icStatusApproved.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   ├── f7_checkmark-seal-fill.png
+│   │   │   │   ├── f7_checkmark-seal-fill@2x.png
+│   │   │   │   └── f7_checkmark-seal-fill@3x.png
+│   │   │   ├── icStatusReject.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── reject.svg
+│   │   │   ├── icTestDriver.imageset
+│   │   │   │   ├── avatar_bg.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icTimer.imageset
+│   │   │   │   ├── 09-timer.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icTransfer.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_transfer.svg
+│   │   │   ├── icUserAvatar.imageset
+│   │   │   │   ├── avatar_bg.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icVDots.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── menu-dots-vertical 1.svg
+│   │   │   ├── icWallet.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_wallet.svg
+│   │   │   ├── icWalletHistory.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── wallet_history.svg
+│   │   │   └── logoSplash.imageset
+│   │   │       ├── Contents.json
+│   │   │       └── Group.png
+│   │   ├── en.lproj
+│   │   │   └── Localizable.strings
+│   │   ├── Fonts
+│   │   │   ├── Poppins-Black.ttf
+│   │   │   ├── Poppins-BlackItalic.ttf
+│   │   │   ├── Poppins-Bold.ttf
+│   │   │   ├── Poppins-BoldItalic.ttf
+│   │   │   ├── Poppins-ExtraBold.ttf
+│   │   │   ├── Poppins-ExtraBoldItalic.ttf
+│   │   │   ├── Poppins-ExtraLight.ttf
+│   │   │   ├── Poppins-ExtraLightItalic.ttf
+│   │   │   ├── Poppins-Italic.ttf
+│   │   │   ├── Poppins-Light.ttf
+│   │   │   ├── Poppins-LightItalic.ttf
+│   │   │   ├── Poppins-Medium.ttf
+│   │   │   ├── Poppins-MediumItalic.ttf
+│   │   │   ├── Poppins-Regular.ttf
+│   │   │   ├── Poppins-SemiBold.ttf
+│   │   │   ├── Poppins-SemiBoldItalic.ttf
+│   │   │   ├── Poppins-Thin.ttf
+│   │   │   └── Poppins-ThinItalic.ttf
+│   │   ├── GIF
+│   │   │   ├── gifBookingNotFound.gif
+│   │   │   ├── gifDocumentNotFound.gif
+│   │   │   ├── gifHistoryNotFound.gif
+│   │   │   ├── gifNotificationNotFound.gif
+│   │   │   ├── gifRestrictionIcon.gif
+│   │   │   ├── gifTruck.gif
+│   │   │   ├── gifUploadApp.gif
+│   │   │   └── gifWalletHistoryNotFound.gif
+│   │   ├── GoogleService-Info.plist
+│   │   └── Info.plist
+│   ├── Surat.gpx
+│   └── Utility
+│       ├── AnalyticsHelper.swift
+│       ├── AppEnums.swift
+│       ├── AppSingletons.swift
+│       ├── BatteryMoniter.swift
+│       ├── CommonApis
+│       │   ├── Model
+│       │   │   ├── GetUserTokenRequest.swift
+│       │   │   └── UserDetailModel
+│       │   │       ├── UserDetailModel.swift
+│       │   │       └── UserDetailRequestAPI.swift
+│       │   └── ViewModel
+│       │       └── CommonApiModel.swift
+│       ├── CommonViewModel.swift
+│       ├── HeroAnimationKeys.swift
+│       ├── LocalizeHelper
+│       │   ├── LocalizeKey.swift
+│       │   ├── LocalizeString.swift
+│       │   └── Model
+│       │       ├── RequestModel
+│       │       │   └── LocalizedStringRequestModel.swift
+│       │       └── ResponseModel
+│       │           └── LocalizedStringModel.swift
+│       ├── LocationManager
+│       │   └── LocationManager.swift
+│       ├── NotificationAudioDownloder.swift
+│       ├── PushNotification
+│       │   └── PushNotificationForFirebase.swift
+│       ├── Router
+│       │   ├── AppRouter.swift
+│       │   └── HomeScreenRouter.swift
+│       ├── Socket
+│       │   ├── Model
+│       │   │   ├── SocketSendLocationModel.swift
+│       │   │   └── SocketSignUpParam.swift
+│       │   └── SocketHelper.swift
+│       └── Utility.swift
+├── QCommercePicker.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   ├── xcshareddata
+│   │   │   └── swiftpm
+│   │   │       ├── configuration
+│   │   │       └── Package.resolved
+│   │   └── xcuserdata
+│   │       └── elluminati.xcuserdatad
+│   │           ├── UserInterfaceState (1).xcuserstate
+│   │           └── UserInterfaceState.xcuserstate
+│   ├── README.md
+│   ├── xcshareddata
+│   │   └── xcschemes
+│   │       └── QCommercePicker.xcscheme
+│   └── xcuserdata
+│       └── elluminati.xcuserdatad
+│           └── xcschemes
+│               └── xcschememanagement.plist
+├── README.md
+└── sonar-project.properties
+
+
+
+elluminati@Bandans-Mac-mini user % tree
+.
+├── BookingLiveActivity
+│   ├── Assets.xcassets
+│   │   ├── AccentColor.colorset
+│   │   │   └── Contents.json
+│   │   ├── AppIcon.appiconset
+│   │   │   └── Contents.json
+│   │   ├── Contents.json
+│   │   ├── icDriverPin.imageset
+│   │   │   ├── Contents.json
+│   │   │   └── toolzbuy681111-removebg-preview 6 rotated.svg
+│   │   └── WidgetBackground.colorset
+│   │       └── Contents.json
+│   ├── BookingActivityAttribute.swift
+│   ├── BookingLiveActivity.swift
+│   ├── BookingLiveActivityBundle.swift
+│   ├── Info-Dash.plist
+│   ├── Info-Drive.plist
+│   ├── Info-Mart.plist
+│   ├── Info-Servizo.plist
+│   └── Info.plist
+├── Hyze
+│   ├── AppConstant
+│   │   ├── ColorConstant.swift
+│   │   ├── Constant.swift
+│   │   ├── ImageAssets.swift
+│   │   └── KeyConstant.swift
+│   ├── AppCustomViews
+│   │   ├── ActivityView.swift
+│   │   ├── AddressCardView.swift
+│   │   ├── AddressCountView.swift
+│   │   ├── AddressTextFieldView.swift
+│   │   ├── AddressView.swift
+│   │   ├── AirportTerminalView
+│   │   │   ├── AirportTerminalView.swift
+│   │   │   └── AirportTerminalViewModel.swift
+│   │   ├── AlertView
+│   │   │   ├── Toast.swift
+│   │   │   ├── ToastModifier.swift
+│   │   │   ├── ToastStyle.swift
+│   │   │   ├── ToastView.swift
+│   │   │   ├── View_Glow.swift
+│   │   │   └── View_toastView.swift
+│   │   ├── AppDivider.swift
+│   │   ├── AsyncImageHelper
+│   │   │   ├── GIFURLLoader.swift
+│   │   │   ├── KingfisherImage.swift
+│   │   │   └── UrlImage.swift
+│   │   ├── BackgroundCleanerView.swift
+│   │   ├── BackgroungModifier.swift
+│   │   ├── BottomSheetTitleView.swift
+│   │   ├── Button
+│   │   │   ├── AppBorderButtonView.swift
+│   │   │   ├── AppButtonView.swift
+│   │   │   ├── AppDashButttonView.swift
+│   │   │   ├── ButtonView.swift
+│   │   │   └── NextSquareButton.swift
+│   │   ├── carousel.swift
+│   │   ├── ChatBoxView.swift
+│   │   ├── CommonWebView.swift
+│   │   ├── CommonWebViewController.swift
+│   │   ├── ContactPicker
+│   │   │   └── ContactPicker.swift
+│   │   ├── CornerRadiusModifier.swift
+│   │   ├── CustomAlertBottomSheet
+│   │   │   └── CustomAlertBottomSheet.swift
+│   │   ├── CustomFullScreenCover.swift
+│   │   ├── CustomModifier
+│   │   │   └── CustomModifier.swift
+│   │   ├── CustomScrollView.swift
+│   │   ├── DashedLine.swift
+│   │   ├── DocumentPicker.swift
+│   │   ├── DropOffPin.swift
+│   │   ├── GIFPlayes
+│   │   │   ├── GIFPlayerView.swift
+│   │   │   ├── SDWebGIFView.swift
+│   │   │   └── SwiftUIGIFPlayerView.swift
+│   │   ├── GridView.swift
+│   │   ├── HeaderView.swift
+│   │   ├── HistoryListCardView.swift
+│   │   ├── HTMLFormattedText.swift
+│   │   ├── ImageCache
+│   │   │   └── ImageCache.swift
+│   │   ├── ImagePicker.swift
+│   │   ├── InvoiceTitleValueView.swift
+│   │   ├── KIOTP
+│   │   │   ├── KIOTPView.swift
+│   │   │   └── RoundedBorderModifier.swift
+│   │   ├── MapView
+│   │   │   ├── ApiRequests
+│   │   │   │   └── LocationRequest.swift
+│   │   │   ├── LocationManager
+│   │   │   │   ├── AppleMapAutoComplete.swift
+│   │   │   │   ├── LocationManager.swift
+│   │   │   │   ├── LocationManager+AppleMap.swift
+│   │   │   │   ├── LocationManager+Extension.swift
+│   │   │   │   ├── LocationManager+GoogleMap.swift
+│   │   │   │   ├── LocationManager+Mapbox.swift
+│   │   │   │   ├── LocationManager+OSM.swift
+│   │   │   │   └── Model
+│   │   │   │       ├── PlaceDetailId.swift
+│   │   │   │       └── RideLocations.swift
+│   │   │   ├── MapManager
+│   │   │   │   ├── AppleMapManager.swift
+│   │   │   │   ├── GoogleMapManager.swift
+│   │   │   │   ├── MapboxManager.swift
+│   │   │   │   ├── OpenStreetMapManager.swift
+│   │   │   │   ├── OSMstyle.json
+│   │   │   │   └── OSMView.swift
+│   │   │   ├── MapViewInterface.swift
+│   │   │   ├── Model
+│   │   │   │   ├── MapService.swift
+│   │   │   │   ├── Request
+│   │   │   │   │   ├── DirectionRequestParams.swift
+│   │   │   │   │   ├── DistanceMatrixrequestParam.swift
+│   │   │   │   │   ├── GeocodeRequestParams.swift
+│   │   │   │   │   ├── PlaceDetailRequestParams.swift
+│   │   │   │   │   └── PlacesRequestParams.swift
+│   │   │   │   └── Response
+│   │   │   │       ├── DistanceMatrixModel.swift
+│   │   │   │       ├── GmapDirectionModel.swift
+│   │   │   │       ├── GMapGeocodeModel.swift
+│   │   │   │       └── GMapLocationsModel.swift
+│   │   │   ├── Protocols
+│   │   │   │   └── MapServiceDelegates.swift
+│   │   │   └── View
+│   │   │       ├── AppleMap
+│   │   │       │   ├── CustomAnnotation
+│   │   │       │   │   └── CustomAnnotation.swift
+│   │   │       │   └── View
+│   │   │       │       └── AppleMapView.swift
+│   │   │       ├── CustomView
+│   │   │       │   └── CustomMarkerView.swift
+│   │   │       ├── GoogleMap
+│   │   │       │   ├── GoogleMapStyle
+│   │   │       │   │   └── GoogleMapStyle.swift
+│   │   │       │   ├── Model
+│   │   │       │   │   ├── RequestModel
+│   │   │       │   │   │   └── GoogleApiRequest.swift
+│   │   │       │   │   └── ResponseModel
+│   │   │       │   │       └── GoogleFetchPathModel.swift
+│   │   │       │   └── View
+│   │   │       │       └── GoogleMapView.swift
+│   │   │       ├── MapBoxMap
+│   │   │       │   └── View
+│   │   │       │       └── MapBoxView.swift
+│   │   │       └── MapView.swift
+│   │   ├── MutipleLineHStackLayout.swift
+│   │   ├── NavigationBarView.swift
+│   │   ├── NoInternetConnectionView.swift
+│   │   ├── NotificationCountView.swift
+│   │   ├── OptionView
+│   │   │   ├── CheckboxRowView.swift
+│   │   │   ├── OptionButton.swift
+│   │   │   └── RadioButton.swift
+│   │   ├── PaddingModifier.swift
+│   │   ├── PickerButtonView.swift
+│   │   ├── QRscanner
+│   │   │   ├── GenerateQrCode.swift
+│   │   │   ├── GenerateQrCodeView.swift
+│   │   │   ├── QRScanner+ViewController.swift
+│   │   │   └── QRScannerView.swift
+│   │   ├── RatingView.swift
+│   │   ├── ReceiptView.swift
+│   │   ├── RedeemPointsView.swift
+│   │   ├── RoundCorner.swift
+│   │   ├── ScaledFont.swift
+│   │   ├── SeperatorWithPlusButton.swift
+│   │   ├── ServerDialog
+│   │   │   ├── Model
+│   │   │   │   └── ServerDialogListModel.swift
+│   │   │   ├── View
+│   │   │   │   └── ServerDialogView.swift
+│   │   │   └── ViewModel
+│   │   │       └── ServerDialogViewModel.swift
+│   │   ├── SheetBGAnimaitonView.swift
+│   │   ├── TagListView
+│   │   │   ├── Model
+│   │   │   │   └── TagListModel.swift
+│   │   │   ├── View
+│   │   │   │   └── TagListView.swift
+│   │   │   └── ViewModel
+│   │   │       └── TagListViewModel.swift
+│   │   ├── TextField
+│   │   │   ├── AddressBoxTextView.swift
+│   │   │   ├── AddressTextField.swift
+│   │   │   ├── AppDropDownTextField.swift
+│   │   │   ├── AppOpenRideTextField.swift
+│   │   │   ├── AppSecureTextField.swift
+│   │   │   ├── AppTextField.swift
+│   │   │   ├── AppTextView.swift
+│   │   │   ├── TextFieldView.swift
+│   │   │   └── ViewModel
+│   │   │       └── AddressBoxViewModel.swift
+│   │   ├── TicketShapeView.swift
+│   │   ├── Timer
+│   │   │   ├── AppTimerView.swift
+│   │   │   └── ViewModel
+│   │   │       └── AppTimeCounterViewModel.swift
+│   │   ├── TitlePickerButtonView.swift
+│   │   ├── TransparentBackground.swift
+│   │   └── Zoomable
+│   │       ├── ZoomableImageView.swift
+│   │       ├── ZoomableModifier.swift
+│   │       └── ZoomableView.swift
+│   ├── AppStart
+│   │   ├── AppDelegate.swift
+│   │   ├── AppStart.swift
+│   │   └── SceneDelegate.swift
+│   ├── Extensions
+│   │   ├── ApiEndUrlTaxi.swift
+│   │   ├── Array+Extensions.swift
+│   │   ├── CLLocation+Extensions.swift
+│   │   ├── Color+Extensions.swift
+│   │   ├── Data+Extension.swift
+│   │   ├── Date+Extension.swift
+│   │   ├── Double+Extensions.swift
+│   │   ├── EncodableExtension.swift
+│   │   ├── EnvironmentValues+Extension.swift
+│   │   ├── Float+Extension.swift
+│   │   ├── Int+Extension.swift
+│   │   ├── Keyboard+Exttensions.swift
+│   │   ├── NotificationName+Extension.swift
+│   │   ├── String+Extension.swift
+│   │   ├── UIApplication+Extensions.swift
+│   │   ├── UIColor+Extension.swift
+│   │   ├── UIEdgeInset+Extension.swift
+│   │   ├── UIImage+Extension.swift
+│   │   ├── UIScreen+Extension.swift
+│   │   └── View+Extension.swift
+│   ├── Modules
+│   │   ├── Authentication
+│   │   │   ├── CityListView
+│   │   │   │   ├── CityListView.swift
+│   │   │   │   ├── Model
+│   │   │   │   │   └── CityResponseModel.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── CityListViewModel.swift
+│   │   │   ├── CountryCodeView
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── CountryCodeDataModel.swift
+│   │   │   │   │   ├── CountryCodeResponse.swift
+│   │   │   │   │   ├── CountryListModel.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── CountryCodeRequest.swift
+│   │   │   │   │       └── CountryCodeRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CountryCodeView.swift
+│   │   │   │   │   └── MultiplePhoneCodeBottomSheet.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── CountryCodeViewModel.swift
+│   │   │   ├── ForgotPassword
+│   │   │   │   ├── View
+│   │   │   │   │   └── ForgotPasswordSendOTPView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── ForgotPasswordViewModel.swift
+│   │   │   ├── GetUserDetail
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── CustomerMissingInformationModel.swift
+│   │   │   │   │   ├── FormFieldResponseModel.swift
+│   │   │   │   │   ├── GetUserEnitityParam.swift
+│   │   │   │   │   ├── GetUserTokenRequest.swift
+│   │   │   │   │   └── VersionModel.swift
+│   │   │   │   ├── UserDetailModel
+│   │   │   │   │   ├── CommonRequestParam.swift
+│   │   │   │   │   ├── EntityModel.swift
+│   │   │   │   │   └── UserDetailRequestAPI.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── CommonApiModel.swift
+│   │   │   ├── LaunchScreen
+│   │   │   │   ├── Launch Screen All.storyboard
+│   │   │   │   ├── Launch Screen.storyboard
+│   │   │   │   ├── View
+│   │   │   │   │   └── LaunchScreenView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── LaunchScreenViewModel.swift
+│   │   │   ├── Login
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── LoginDataModel.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── LoginRequest.swift
+│   │   │   │   │       └── LoginRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── LoginPasswordView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── AppleSignInViewModel
+│   │   │   │       │   ├── AppleSignInUser.swift
+│   │   │   │       │   └── AppleSignInViewModel.swift
+│   │   │   │       ├── GoogleSignInViewModel
+│   │   │   │       │   ├── GoogleSignInViewModel.swift
+│   │   │   │       │   └── GoogleSingInUser.swift
+│   │   │   │       └── LoginViewModel.swift
+│   │   │   ├── OTP
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── OtpRequest.swift
+│   │   │   │   │   │   └── OtpRequestModel.swift
+│   │   │   │   │   └── VerifyOtpResponseModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── OTPBottomSheetView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── OTPViewModel.swift
+│   │   │   ├── Profile
+│   │   │   │   ├── Model
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── ProfileRequest.swift
+│   │   │   │   │       └── ProfileRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── ProfileView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── ProfileViewModel.swift
+│   │   │   ├── Register
+│   │   │   │   ├── Model
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── RegisterRequest.swift
+│   │   │   │   │       └── RegisterRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── RegisterView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── RegisterViewModel.swift
+│   │   │   ├── RegisterReferralCode
+│   │   │   │   └── View
+│   │   │   │       └── ReferralCodeBottomSheetView.swift
+│   │   │   ├── Router
+│   │   │   │   ├── AppRouter.swift
+│   │   │   │   └── ScreenRouter.swift
+│   │   │   ├── SelectGenderSheet.swift
+│   │   │   ├── SetPassword
+│   │   │   │   ├── Model
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── SetPasswordRequest.swift
+│   │   │   │   │       └── SetPasswordRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── SetPasswordView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── SetPasswordViewModel.swift
+│   │   │   ├── VerifyPassword
+│   │   │   │   ├── VerifyPasswordBottomView.swift
+│   │   │   │   └── VerifyPasswordViewModel.swift
+│   │   │   └── VerifyPhoneNumber
+│   │   │       ├── VerifyPhoneNumberAndEmailView.swift
+│   │   │       └── VerifyPhoneNumberAndEmailViewModel.swift
+│   │   ├── Booking
+│   │   │   ├── CancelBooking
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── RequestModel
+│   │   │   │   │   │   ├── CancelBookingReasonModel.swift
+│   │   │   │   │   │   ├── CancelBookingRequestModel.swift
+│   │   │   │   │   │   └── CancelTripApiRequest.swift
+│   │   │   │   │   └── ResponseModel
+│   │   │   │   │       ├── CancelBookingCharge.swift
+│   │   │   │   │       └── CancellationReasonModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── CancelBookingView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── CancelTripViewModel.swift
+│   │   │   ├── CancellationPolicy
+│   │   │   │   ├── Model
+│   │   │   │   │   └── CancellationListModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── CancellationPolicyView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── CancellationPolicyViewModel.swift
+│   │   │   ├── Feedback
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── FeedbackBookingModel.swift
+│   │   │   │   │   └── RequestModel
+│   │   │   │   │       ├── FeedbackApiRequest.swift
+│   │   │   │   │       ├── GiveFeedbackRequestModel.swift
+│   │   │   │   │       └── WalletTipParams.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── FeedbackView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── FeedbackViewModel.swift
+│   │   │   ├── FixGroupBooking
+│   │   │   │   ├── View
+│   │   │   │   │   └── FixGroupBookingsListView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── FixGroupBookingsListViewModel.swift
+│   │   │   ├── MyBooking
+│   │   │   │   ├── BookingCard
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   └── MyBookingsCardView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── MyBookingCardViewModel.swift
+│   │   │   │   ├── BookingDetail
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── MyBookingDetailShimmerView.swift
+│   │   │   │   │   │   └── MyBookingDetailView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── MyBookingDetailViewModel.swift
+│   │   │   │   └── BookingList
+│   │   │   │       ├── Model
+│   │   │   │       │   ├── ProductData.swift
+│   │   │   │       │   └── Response
+│   │   │   │       │       └── MyBookingListModel.swift
+│   │   │   │       ├── View
+│   │   │   │       │   ├── MyBookingListShimerView.swift
+│   │   │   │       │   └── MyBookingsListView.swift
+│   │   │   │       └── ViewModel
+│   │   │   │           └── MyBookingsListViewModel.swift
+│   │   │   └── PromoOffers
+│   │   │       ├── Model
+│   │   │       │   ├── Request
+│   │   │       │   │   ├── PromocodeRequest.swift
+│   │   │       │   │   └── PromocodeRequestParam.swift
+│   │   │       │   └── Response
+│   │   │       │       ├── PromocodeResponseModel.swift
+│   │   │       │       ├── PromoOffers.swift
+│   │   │       │       └── ValidatePromocodeModel.swift
+│   │   │       ├── View
+│   │   │       │   ├── CustomViews
+│   │   │       │   │   └── PromoOffersCardView.swift
+│   │   │       │   ├── PromoOfferShimmerView.swift
+│   │   │       │   └── PromoOffersView.swift
+│   │   │       └── ViewModel
+│   │   │           └── PromoOffersViewModel.swift
+│   │   ├── Chat
+│   │   │   ├── Models
+│   │   │   │   ├── Request
+│   │   │   │   │   ├── ChatApiRequest.swift
+│   │   │   │   │   ├── SocketFetchMessage.swift
+│   │   │   │   │   └── SocketJoinChatParam.swift
+│   │   │   │   └── Respose
+│   │   │   │       ├── FetchSocketMessage.swift
+│   │   │   │       ├── Message.swift
+│   │   │   │       ├── SocketGetMessageParam.swift
+│   │   │   │       └── SocketSendMessageParam.swift
+│   │   │   ├── View
+│   │   │   │   ├── ChatView.swift
+│   │   │   │   └── CutomViews
+│   │   │   │       ├── MessageCell.swift
+│   │   │   │       └── MessageView.swift
+│   │   │   └── ViewModel
+│   │   │       └── ChatViewModel.swift
+│   │   ├── Courier
+│   │   │   ├── ApiEndUrlCourier.swift
+│   │   │   ├── CourierAddress
+│   │   │   │   ├── View
+│   │   │   │   │   ├── AddressDetailSelectionView.swift
+│   │   │   │   │   ├── AssignParcelSheet.swift
+│   │   │   │   │   ├── CourierAddressBox.swift
+│   │   │   │   │   ├── CourierAddressCountView.swift
+│   │   │   │   │   ├── CourierInfoView.swift
+│   │   │   │   │   └── CourierUserInfoView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── AddressDetailSelectionViewModel.swift
+│   │   │   │       ├── CourierAddressBoxViewModel.swift
+│   │   │   │       ├── CourierInfoViewModel.swift
+│   │   │   │       ├── CourierUserInfoViewModel.swift
+│   │   │   │       └── DummyData.swift
+│   │   │   ├── CourierVehicle
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CourierRideListCardView.swift
+│   │   │   │   │   ├── CourierTimelineView.swift
+│   │   │   │   │   ├── CourierVehicleView.swift
+│   │   │   │   │   ├── ParcelDetailView.swift
+│   │   │   │   │   └── VehicleModifierView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── CourierVehicleViewModel.swift
+│   │   │   │       └── VehicleModifierViewModel.swift
+│   │   │   ├── Model
+│   │   │   │   ├── CoreParcelModel.swift
+│   │   │   │   ├── CourierMainCatResponse.swift
+│   │   │   │   ├── CourierModel.swift
+│   │   │   │   ├── ModelCheckBusinessResponse.swift
+│   │   │   │   └── ModelCourierFareEstimate.swift
+│   │   │   └── Request
+│   │   │       ├── CourierAddressParam.swift
+│   │   │       └── CourierAddressRequest.swift
+│   │   ├── Delivery
+│   │   │   ├── Api
+│   │   │   │   └── ApiEndUrlQDelivery.swift
+│   │   │   ├── CommonView
+│   │   │   │   ├── ASAPView.swift
+│   │   │   │   ├── BussinessTypeDesView.swift
+│   │   │   │   ├── CategoryGridViews
+│   │   │   │   │   ├── Model
+│   │   │   │   │   │   └── CategoryGridModel.swift
+│   │   │   │   │   └── View
+│   │   │   │   │       ├── QDeliveryGridSectionView.swift
+│   │   │   │   │       ├── QDeliveryMainGridView.swift
+│   │   │   │   │       ├── QDeliverySubImageGridView.swift
+│   │   │   │   │       ├── QDSliderChild.swift
+│   │   │   │   │       ├── QGridChildView.swift
+│   │   │   │   │       └── QGridSectionHeaderFooterView.swift
+│   │   │   │   ├── ChangeMerchantView
+│   │   │   │   │   └── ChangeMerchantAlertView.swift
+│   │   │   │   ├── ClosedView.swift
+│   │   │   │   ├── CommonBackButtonView.swift
+│   │   │   │   ├── CommonNavigationBarView.swift
+│   │   │   │   ├── CommonProductGridList
+│   │   │   │   │   └── CommonProductGridList.swift
+│   │   │   │   ├── CounterView.swift
+│   │   │   │   ├── CustomRoundBorderView.swift
+│   │   │   │   ├── ImageGifView.swift
+│   │   │   │   ├── MerchantImageView.swift
+│   │   │   │   ├── MerchantListNameView.swift
+│   │   │   │   ├── ProductCells
+│   │   │   │   │   ├── ProductCellView
+│   │   │   │   │   │   ├── Model
+│   │   │   │   │   │   │   └── QDProductCellData.swift
+│   │   │   │   │   │   ├── QDeliveryProductCellView.swift
+│   │   │   │   │   │   └── QDeliveryProductCellViewModel.swift
+│   │   │   │   │   ├── QDCartCell
+│   │   │   │   │   │   ├── QDProductCartCell.swift
+│   │   │   │   │   │   └── QDProductCartCellViewModel.swift
+│   │   │   │   │   └── QDeliveryProductVarients
+│   │   │   │   │       ├── QDProductVarientCell.swift
+│   │   │   │   │       └── QDProductVarientCellViewModel.swift
+│   │   │   │   ├── ProductVarient
+│   │   │   │   │   ├── QDeliveryProductVariantView.swift
+│   │   │   │   │   └── QDeliveryProductVarientViewModel.swift
+│   │   │   │   ├── QDDividerView.swift
+│   │   │   │   ├── QDeliveryBrandView.swift
+│   │   │   │   ├── QDeliveryCartCountView.swift
+│   │   │   │   ├── QDeliveryGroupListView.swift
+│   │   │   │   ├── QDeliveryHistoryProductView.swift
+│   │   │   │   ├── QDeliveryLabelView.swift
+│   │   │   │   ├── QDeliveryOrderProductListView.swift
+│   │   │   │   ├── QDeliveryProductFeatureView.swift
+│   │   │   │   ├── QDeliveryProductUnitView.swift
+│   │   │   │   ├── QDTagListView
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── QDTagListView.swift
+│   │   │   │   │   │   └── TagRectangleView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── QDTagListviewModel.swift
+│   │   │   │   ├── SDAddressView.swift
+│   │   │   │   ├── SDeliveryBusinessView.swift
+│   │   │   │   ├── SearchView
+│   │   │   │   │   └── QDeliverySearchView.swift
+│   │   │   │   ├── TimeAddressView.swift
+│   │   │   │   └── VoiceSearch
+│   │   │   │       ├── QDeliveryVoiceSearchView.swift
+│   │   │   │       └── QDeliveryVoiceSearchViewModel.swift
+│   │   │   ├── DynamicGroupView.swift
+│   │   │   ├── DynamicGroupViewModel.swift
+│   │   │   ├── Model
+│   │   │   │   └── OrderTypeModel.swift
+│   │   │   ├── QDelivery
+│   │   │   │   └── Order
+│   │   │   │       ├── CartView
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── CartPassDataModel.swift
+│   │   │   │       │   │   ├── QDCartListApiRequest.swift
+│   │   │   │       │   │   ├── RequestModel
+│   │   │   │       │   │   │   ├── QDCartListRequestModel.swift
+│   │   │   │       │   │   │   └── QDCreateOrderModel.swift
+│   │   │   │       │   │   └── ResponseModel
+│   │   │   │       │   │       └── QDCartResponseModel.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   ├── QDCartOfferPopUpView.swift
+│   │   │   │       │   │   └── QDeliveryCartView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       ├── Payment+QDCartViewModel.swift
+│   │   │   │       │       ├── QDeliveryCartViewModel.swift
+│   │   │   │       │       └── Socket+QDeliveryCartViewModel.swift
+│   │   │   │       ├── CommonQD
+│   │   │   │       │   ├── CommonOtherDetailView.swift
+│   │   │   │       │   ├── CommonQDShimmer.swift
+│   │   │   │       │   └── CommonViewQD.swift
+│   │   │   │       ├── FilterProductList
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── FilterListPassModel.swift
+│   │   │   │       │   │   ├── FilterProductListModel.swift
+│   │   │   │       │   │   ├── RequestModel
+│   │   │   │       │   │   │   └── FilterListApiRequest.swift
+│   │   │   │       │   │   └── ResponseModel
+│   │   │   │       │   │       └── FilterListResponseModel.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   └── FilterProductListView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       └── FilterProductListViewModel.swift
+│   │   │   │       ├── History
+│   │   │   │       │   ├── QDeliveryOrderHistoryDetailView.swift
+│   │   │   │       │   └── QDOrderHistoryCard.swift
+│   │   │   │       ├── Home
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── RequestModel
+│   │   │   │       │   │   │   └── QDHomeApiRequest.swift
+│   │   │   │       │   │   └── ResponseModel
+│   │   │   │       │   │       └── MainCatResponse.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   └── QDeliveryHomeView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       └── QDeliveryHomeViewModel.swift
+│   │   │   │       ├── ModifierView
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── ModifierCartData.swift
+│   │   │   │       │   │   ├── ProductInCart.swift
+│   │   │   │       │   │   └── ProductModifier.swift
+│   │   │   │       │   └── View
+│   │   │   │       │       ├── CustomViews
+│   │   │   │       │       │   ├── ModifierTitleView.swift
+│   │   │   │       │       │   └── MultiSelectView.swift
+│   │   │   │       │       ├── ProductModifierView.swift
+│   │   │   │       │       └── RepeatModifierView.swift
+│   │   │   │       ├── MyOrders
+│   │   │   │       │   └── OrderDetail
+│   │   │   │       │       └── View
+│   │   │   │       │           ├── OrderCardView
+│   │   │   │       │           │   ├── QDOrderCardView.swift
+│   │   │   │       │           │   └── QDOrderCardViewModel.swift
+│   │   │   │       │           ├── QDMyOrderDetailView.swift
+│   │   │   │       │           └── QDMyOrderInvoiceView.swift
+│   │   │   │       ├── ProductDetail
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── ProductDetailRequestModel.swift
+│   │   │   │       │   │   ├── ProductFeature.swift
+│   │   │   │       │   │   ├── ProductImage.swift
+│   │   │   │       │   │   ├── ProductInfo.swift
+│   │   │   │       │   │   ├── ProductVarientData.swift
+│   │   │   │       │   │   ├── Request
+│   │   │   │       │   │   │   └── ProductDetailAPIRequest.swift
+│   │   │   │       │   │   └── Response
+│   │   │   │       │   │       ├── QDeliveryBrandDetail.swift
+│   │   │   │       │   │       └── QDeliveryProductDetailModel.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   ├── CustomViews
+│   │   │   │       │   │   │   ├── DetailSectionTitleView.swift
+│   │   │   │       │   │   │   ├── ProductAddToCartView.swift
+│   │   │   │       │   │   │   ├── QDInfoDescriptionView.swift
+│   │   │   │       │   │   │   ├── SingleSelectView.swift
+│   │   │   │       │   │   │   └── VariantRadioView.swift
+│   │   │   │       │   │   ├── ProductDetailShimmerView.swift
+│   │   │   │       │   │   └── ProductDetailView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       ├── ProductDetailViewModel.swift
+│   │   │   │       │       ├── ProductDetailViewModel+API.swift
+│   │   │   │       │       └── ProductDetailViewModel+Modifiers.swift
+│   │   │   │       ├── ProductList
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── ProductListPassDataModel.swift
+│   │   │   │       │   │   ├── Request
+│   │   │   │       │   │   │   ├── ProductListApiRequest.swift
+│   │   │   │       │   │   │   └── ProductListRequestModel.swift
+│   │   │   │       │   │   └── Response
+│   │   │   │       │   │       ├── ProductListResponseModel.swift
+│   │   │   │       │   │       └── SubCatListResponseModel.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   └── ProductListView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       └── ProductListViewModel.swift
+│   │   │   │       └── SearchView
+│   │   │   │           ├── Model
+│   │   │   │           │   ├── RequestModel
+│   │   │   │           │   │   ├── SearchApiRequest.swift
+│   │   │   │           │   │   └── SearchRequestParam.swift
+│   │   │   │           │   └── SearchNameLocalModel.swift
+│   │   │   │           ├── View
+│   │   │   │           │   └── QDeliveryProductSearchView.swift
+│   │   │   │           └── ViewModel
+│   │   │   │               └── QDeliveryProductSearchViewModel.swift
+│   │   │   ├── SDelivery
+│   │   │   │   ├── MerchantDetailSheet
+│   │   │   │   │   ├── MerchantDetailSheet.swift
+│   │   │   │   │   └── MerchantDetailSheetViewModel.swift
+│   │   │   │   └── Order
+│   │   │   │       ├── FilterMerchantList
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── FilterMerchantListPassModel.swift
+│   │   │   │       │   │   └── MerchantFilterModel.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   └── FilterMerchantListView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       └── FilterMerchantListViewModel.swift
+│   │   │   │       ├── Home
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   ├── DeliveryListCell.swift
+│   │   │   │       │   │   └── SDeliveryHomeView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       └── SDeliveryHomeViewModel.swift
+│   │   │   │       ├── MerchantList
+│   │   │   │       │   ├── Model
+│   │   │   │       │   │   ├── MerchantListPassModel.swift
+│   │   │   │       │   │   ├── RequestModel
+│   │   │   │       │   │   │   └── MerchantListApiRequest.swift
+│   │   │   │       │   │   └── ResponseModel
+│   │   │   │       │   │       └── MerchantListResponseModel.swift
+│   │   │   │       │   ├── View
+│   │   │   │       │   │   ├── MerchantListCell.swift
+│   │   │   │       │   │   └── MerchantListView.swift
+│   │   │   │       │   └── ViewModel
+│   │   │   │       │       ├── MerchantListCellViewModel.swift
+│   │   │   │       │       └── MerchantListViewModel.swift
+│   │   │   │       └── MerchnatDetail
+│   │   │   │           ├── Model
+│   │   │   │           │   ├── DaySettingData.swift
+│   │   │   │           │   ├── FavoriteMerchant
+│   │   │   │           │   │   └── FavoriteMerchantResponse.swift
+│   │   │   │           │   ├── InfoModel.swift
+│   │   │   │           │   └── MerchantDetailPassData.swift
+│   │   │   │           ├── View
+│   │   │   │           │   ├── MerchantDetailCell.swift
+│   │   │   │           │   └── SDMerchantDetailView.swift
+│   │   │   │           └── ViewModel
+│   │   │   │               └── SDMerchantDetailViewModel.swift
+│   │   │   ├── Service
+│   │   │   │   ├── ServiceHomeGroup
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   └── ServiceHomeGroupView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── ServiceHomeGroupViewModel.swift
+│   │   │   │   ├── ServiceProviderCell
+│   │   │   │   │   ├── ServiceProviderCell.swift
+│   │   │   │   │   └── ServiceProviderCellViewModel.swift
+│   │   │   │   └── ServiceProviders
+│   │   │   │       ├── Model
+│   │   │   │       │   ├── RequestModel
+│   │   │   │       │   │   ├── ProvidersListAPIRequest.swift
+│   │   │   │       │   │   └── ProvidersParamModel.swift
+│   │   │   │       │   └── ResponseModel
+│   │   │   │       │       └── ProvidersResponseModel.swift
+│   │   │   │       ├── View
+│   │   │   │       │   └── ServiceProvidersView.swift
+│   │   │   │       └── ViewModel
+│   │   │   │           └── ServiceProvidersViewModel.swift
+│   │   │   └── Utility
+│   │   │       ├── CommonQDeliveryApi.swift
+│   │   │       ├── CustomModifier
+│   │   │       │   ├── QDeliveryViewModifier.swift
+│   │   │       │   └── WillDisappearHandler.swift
+│   │   │       ├── QDCartManager
+│   │   │       │   ├── QDCartManager.swift
+│   │   │       │   └── QDCartManagerViewModel.swift
+│   │   │       ├── QDConstant.swift
+│   │   │       ├── QDeliveryColorConstant.swift
+│   │   │       ├── QDeliveryEnums.swift
+│   │   │       ├── RequestModel
+│   │   │       │   ├── AttributeGroupParamModel.swift
+│   │   │       │   ├── CommonApiRequest.swift
+│   │   │       │   ├── GroupListRequestModel.swift
+│   │   │       │   ├── ProductTagListRequestModel.swift
+│   │   │       │   ├── QDAddProductParamModel.swift
+│   │   │       │   └── QDCheckBusinessParamModel.swift
+│   │   │       ├── ResponseModel
+│   │   │       │   ├── AttributeGroupResponseModel.swift
+│   │   │       │   ├── CheckQDResponseModel.swift
+│   │   │       │   └── ProductTagListResponseModel.swift
+│   │   │       ├── Singletone
+│   │   │       │   ├── ProductBookingDetail.swift
+│   │   │       │   ├── SDeliveryBusiness.swift
+│   │   │       │   ├── ServiceBusiness.swift
+│   │   │       │   └── ServiceSingletone.swift
+│   │   │       ├── Untitled.swift
+│   │   │       └── UtilityQDelivery.swift
+│   │   ├── Home
+│   │   │   ├── AddressSelection
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── AddressData.swift
+│   │   │   │   │   ├── NearbyDriverData.swift
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── AddressRequestParam.swift
+│   │   │   │   │   │   ├── AirPortTerminalListRequest.swift
+│   │   │   │   │   │   └── FavouriteAddressRequest.swift
+│   │   │   │   │   └── Response
+│   │   │   │   │       └── FavouriteAddressModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── AddressListSelectionShimmerView.swift
+│   │   │   │   │   ├── AddressSelectionView.swift
+│   │   │   │   │   └── CustomViews
+│   │   │   │   │       └── FavouriteAddressView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── AddressSelectionViewModel.swift
+│   │   │   ├── MissingInformation
+│   │   │   │   ├── Model
+│   │   │   │   │   └── MissingInfoModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── MissingInformationBottomSheet.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── MissingInformationViewModel.swift
+│   │   │   ├── RestictionView
+│   │   │   │   ├── View
+│   │   │   │   │   └── RestictionView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── RestictionViewModel.swift
+│   │   │   ├── RideForOther
+│   │   │   │   ├── CustomerRequestModel.swift
+│   │   │   │   ├── RideForOtherUserModel.swift
+│   │   │   │   ├── RideForOtherView.swift
+│   │   │   │   └── RideForOtherViewModel.swift
+│   │   │   ├── SetLocationMapPlacesView
+│   │   │   │   ├── AdditionalInfoView.swift
+│   │   │   │   ├── AdditionalInfoViewModel.swift
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── AddDestinationLaterAddressRequest.swift
+│   │   │   │   │   ├── DestinationLaterEditData.swift
+│   │   │   │   │   └── UpdateLocationModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CustomViews
+│   │   │   │   │   │   ├── SearchPlaceTextView.swift
+│   │   │   │   │   │   └── SetSingleAddressBoxView.swift
+│   │   │   │   │   └── SetLocationMapPlacesView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── SetLocationMapPlacesViewModel.swift
+│   │   │   └── UserHome
+│   │   │       ├── Model
+│   │   │       │   ├── Request
+│   │   │       │   │   ├── BusinessTypeRequestModel.swift
+│   │   │       │   │   └── HomeRequest.swift
+│   │   │       │   └── Response
+│   │   │       │       ├── BusinessCategoryModel.swift
+│   │   │       │       └── HomeModel.swift
+│   │   │       ├── View
+│   │   │       │   ├── CustomViews
+│   │   │       │   │   ├── BusinessTypeCard.swift
+│   │   │       │   │   ├── CourierCardView.swift
+│   │   │       │   │   ├── HomeCityListView.swift
+│   │   │       │   │   ├── HomeCountryListView.swift
+│   │   │       │   │   ├── HomeShimmerView.swift
+│   │   │       │   │   ├── PlacesTagView.swift
+│   │   │       │   │   └── RideCardView.swift
+│   │   │       │   └── HomeView.swift
+│   │   │       └── ViewModel
+│   │   │           ├── HomeViewModel.swift
+│   │   │           └── VehicleTypeListViewModel.swift
+│   │   ├── Invoice
+│   │   │   ├── Model
+│   │   │   │   ├── InvoiceElements.swift
+│   │   │   │   └── RequestModel
+│   │   │   │       ├── InvoiceApiRequest.swift
+│   │   │   │       └── SubmitInvoiceRequestModel.swift
+│   │   │   ├── View
+│   │   │   │   ├── InvoiceBotomSheetView.swift
+│   │   │   │   ├── InvoiceReceiptView.swift
+│   │   │   │   └── InvoiceTitleView.swift
+│   │   │   └── ViewModel
+│   │   │       └── InvoiceViewModel.swift
+│   │   ├── Menu
+│   │   │   ├── ContactUs
+│   │   │   │   ├── Model
+│   │   │   │   │   └── TicketListModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── ContactUsView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── TicketHistoryViewModel.swift
+│   │   │   ├── Documents
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── DocumentApiRequest .swift
+│   │   │   │   │   │   └── DocumentRequestParam.swift
+│   │   │   │   │   └── Response
+│   │   │   │   │       ├── DocumentDataModel.swift
+│   │   │   │   │       └── DocumentListResponse.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CustomeViews
+│   │   │   │   │   │   ├── AddEditDoc.swift
+│   │   │   │   │   │   ├── DocumentView.swift
+│   │   │   │   │   │   └── SelectionBottomSheetView.swift
+│   │   │   │   │   └── DocumentsListView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── AddEditDocViewModel.swift
+│   │   │   │       ├── DocumentsViewModel.swift
+│   │   │   │       └── FileTypeSelectionViewModel.swift
+│   │   │   ├── FavoriteDrivers
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── FavoriteDriverResponse.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       ├── FavoriteDriverRequest.swift
+│   │   │   │   │       └── FavoriteDriverRequestModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CustomeViews
+│   │   │   │   │   │   └── FavoriteDriverView.swift
+│   │   │   │   │   └── FavoriteDriversListView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── FavoriteDriversViewModel.swift
+│   │   │   ├── History
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── HistoryData.swift
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── BookingHistoryRequest.swift
+│   │   │   │   │   │   └── BookingHistoryRequestParam.swift
+│   │   │   │   │   └── Response
+│   │   │   │   │       ├── BookingHistoryDetailModel.swift
+│   │   │   │   │       ├── BookingHistoryModel.swift
+│   │   │   │   │       └── LocationDataModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── BookingHistoryDetailView.swift
+│   │   │   │   │   ├── BookingHistoryFilterView.swift
+│   │   │   │   │   ├── BookingHistoryListView.swift
+│   │   │   │   │   ├── CustomeViews
+│   │   │   │   │   │   ├── BookingHistoryListCardView.swift
+│   │   │   │   │   │   └── BookingHistoryListCardViewModel.swift
+│   │   │   │   │   ├── HistoryDetailShimmerView.swift
+│   │   │   │   │   └── HistoryListShimmerView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── BookingHistoryDetailViewModel.swift
+│   │   │   │       ├── BookingHistoryFilterViewModel.swift
+│   │   │   │       └── BookingHistoryViewModel.swift
+│   │   │   ├── Notifications
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── GetNotificationListModel.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       └── NotificationRequestParam.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── NotificationCardView.swift
+│   │   │   │   │   └── NotificationsListView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── NotificationsViewModel.swift
+│   │   │   ├── RedeemHistory
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── RedeemHistoryParam.swift
+│   │   │   │   │   │   ├── RedeemHistoryRequest.swift
+│   │   │   │   │   │   └── RedeemPointParam.swift
+│   │   │   │   │   └── Response
+│   │   │   │   │       └── RedeemHistoryResponse.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── RedeemHistoryView.swift
+│   │   │   │   │   └── RedeemPointsBottomSheetView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── RedeemHistoryViewModel.swift
+│   │   │   │       └── RedeemPointsViewModel.swift
+│   │   │   ├── ReferalList
+│   │   │   │   ├── Model
+│   │   │   │   │   └── ReferalHistoryModel.swift
+│   │   │   │   ├── ReferalListView.swift
+│   │   │   │   └── ReferalListViewModel.swift
+│   │   │   ├── Referral
+│   │   │   │   ├── ReferralView.swift
+│   │   │   │   └── ReferralViewModel.swift
+│   │   │   ├── Settings
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── RequestModel
+│   │   │   │   │   │   ├── SettingRequest.swift
+│   │   │   │   │   │   └── SettingRequestModel.swift
+│   │   │   │   │   └── Response
+│   │   │   │   │       ├── EmergencyContactResponseModel.swift
+│   │   │   │   │       └── GetLanguageModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── ChangeLanguageBottomSheetView.swift
+│   │   │   │   │   ├── EmergencyContactView
+│   │   │   │   │   │   ├── AddEmergencyContactView.swift
+│   │   │   │   │   │   └── ContactCardView.swift
+│   │   │   │   │   └── SettingsView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── EmergencyContactViewModel.swift
+│   │   │   │       └── SettingsViewModel.swift
+│   │   │   ├── SideMenu
+│   │   │   │   ├── CustomeVews
+│   │   │   │   │   ├── SideMenu.swift
+│   │   │   │   │   └── SideMenuView.swift
+│   │   │   │   ├── MainTabbedView.swift
+│   │   │   │   ├── Model
+│   │   │   │   │   └── SidemenuData.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── SocketViewModel.swift
+│   │   │   └── Vehicle
+│   │   │       ├── AddEditVehicle
+│   │   │       │   ├── AddVehicleModel.swift
+│   │   │       │   ├── AddVehicleView.swift
+│   │   │       │   └── AddVehicleViewModel.swift
+│   │   │       ├── List
+│   │   │       │   ├── VehicleListModel.swift
+│   │   │       │   ├── VehicleListView.swift
+│   │   │       │   └── VehicleListViewModel.swift
+│   │   │       └── Model
+│   │   │           ├── AddVehicleApiRequest.swift
+│   │   │           ├── AddVehicleReqParam.swift
+│   │   │           └── AddVehicleResponse.swift
+│   │   ├── Other
+│   │   │   ├── AppUpdateDailog
+│   │   │   │   └── View
+│   │   │   │       └── AppUpdateDailogView.swift
+│   │   │   ├── PushNotification
+│   │   │   │   └── PushNotification.swift
+│   │   │   ├── SuppotTicket
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── GenerateSuppotParam.swift
+│   │   │   │   │   ├── SuppotTicketApiRequest.swift
+│   │   │   │   │   └── SuppotTicketTypeModel.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── SuppotTicketView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── SuppotTicketViewModel.swift
+│   │   │   ├── TicketDetailView
+│   │   │   │   ├── Model
+│   │   │   │   │   └── UpdateSupportTicketStatusParam.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── TicketDetailView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── TicketDetailViewModel.swift
+│   │   │   └── TimePicker
+│   │   │       ├── DateTimePickerView.swift
+│   │   │       ├── SlotSelectionView.swift
+│   │   │       ├── TimePickerView.swift
+│   │   │       └── TimePickerViewModel.swift
+│   │   ├── Payment
+│   │   │   ├── AddCardDetail
+│   │   │   │   ├── View
+│   │   │   │   │   └── AddCardDetailsView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── AddCardDetailViewModel.swift
+│   │   │   ├── AddWalletAmount
+│   │   │   │   ├── Model
+│   │   │   │   │   └── SocketGetUpdateCredit.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── AddWalletAmount.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── AddWalletAmountViewModel.swift
+│   │   │   ├── StripePayment
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── RequestModel
+│   │   │   │   │   │   ├── PaymentApiRequest.swift
+│   │   │   │   │   │   ├── StripeApiRequest.swift
+│   │   │   │   │   │   └── StripeCardParam.swift
+│   │   │   │   │   └── ResponseModel
+│   │   │   │   │       ├── StripeGetIntentModel.swift
+│   │   │   │   │       └── StripeListCardModel.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── StripePaymentViewModel.swift
+│   │   │   ├── UserPayment
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── PaymentGatewayResponse.swift
+│   │   │   │   │   └── Request
+│   │   │   │   │       └── PaymentGatewayRequest.swift
+│   │   │   │   ├── View
+│   │   │   │   │   ├── CustomViews
+│   │   │   │   │   │   ├── AddNewCardButtonView.swift
+│   │   │   │   │   │   ├── ChoosePaymentOptionView.swift
+│   │   │   │   │   │   ├── CouponCodeCardView.swift
+│   │   │   │   │   │   └── PaymentOptionCardView.swift
+│   │   │   │   │   └── PaymentsView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       ├── PaymentSelectionViewModel.swift
+│   │   │   │       └── PaymentViewModel.swift
+│   │   │   ├── Wallet
+│   │   │   │   ├── Model
+│   │   │   │   │   ├── Request
+│   │   │   │   │   │   ├── WalletHistoryParam.swift
+│   │   │   │   │   │   └── WalletHistoryRequest.swift
+│   │   │   │   │   └── WalletHistoryResponse.swift
+│   │   │   │   ├── View
+│   │   │   │   │   └── WalletHistoryView.swift
+│   │   │   │   └── ViewModel
+│   │   │   │       └── WalletHistoryViewModel.swift
+│   │   │   └── WalletToWalletTrasfer
+│   │   │       ├── Model
+│   │   │       │   ├── Request
+│   │   │       │   │   └── SearchUserDetailParam.swift
+│   │   │       │   └── Response
+│   │   │       │       ├── SearchUserDetailModel.swift
+│   │   │       │       └── WalletTransferParam.swift
+│   │   │       ├── View
+│   │   │       │   └── WalletToWalletTransferView.swift
+│   │   │       └── ViewModel
+│   │   │           └── WalletTransferViewModel.swift
+│   │   ├── QCommerce
+│   │   │   ├── CommonView
+│   │   │   │   └── ProductView.swift
+│   │   │   └── Home
+│   │   │       └── View
+│   │   │           └── QCommerceHomeView.swift
+│   │   ├── Subscription
+│   │   │   ├── Model
+│   │   │   │   ├── RequestModel
+│   │   │   │   │   ├── SubscriptionApiRequest.swift
+│   │   │   │   │   └── SubscriptionRequestModel.swift
+│   │   │   │   └── ResponseModel
+│   │   │   │       ├── SubscriptionCardViewData.swift
+│   │   │   │       └── SubscriptionResponse.swift
+│   │   │   ├── View
+│   │   │   │   ├── CustomViews
+│   │   │   │   │   └── SubscriptionCardView.swift
+│   │   │   │   └── SubscriptionListView.swift
+│   │   │   └── ViewModel
+│   │   │       ├── Payment+SubscriptionViewModel.swift
+│   │   │       └── SubscriptionViewModel.swift
+│   │   ├── Taxi
+│   │   │   ├── Api
+│   │   │   │   └── ApiEndUrlTaxi.swift
+│   │   │   ├── Booking
+│   │   │   │   ├── BiddingRequestList
+│   │   │   │   │   ├── Model
+│   │   │   │   │   │   ├── RequestModel
+│   │   │   │   │   │   │   ├── BiddingAcceptRejectRequestModel.swift
+│   │   │   │   │   │   │   └── BiddingApiRequest.swift
+│   │   │   │   │   │   └── ResponseModel
+│   │   │   │   │   │       └── BiddingListResponseModel.swift
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── BiddingReqListView.swift
+│   │   │   │   │   │   └── BiddingRowView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── BiddingRowViewModel.swift
+│   │   │   │   ├── BidRequest
+│   │   │   │   │   └── BidRequestView.swift
+│   │   │   │   ├── DriverInfo
+│   │   │   │   │   └── DriverInfoView.swift
+│   │   │   │   ├── FareEstimate
+│   │   │   │   │   ├── Model
+│   │   │   │   │   │   └── FareEstimateModel.swift
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── CustomViews
+│   │   │   │   │   │   │   ├── FareEstimateColumnView.swift
+│   │   │   │   │   │   │   └── FareEstimateRowView.swift
+│   │   │   │   │   │   └── FareEstimateView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── FareEstimateViewModel.swift
+│   │   │   │   ├── FixRateConfirmation
+│   │   │   │   │   ├── FixRateConfirmationView.swift
+│   │   │   │   │   └── FixRateConfirmationViewModel.swift
+│   │   │   │   ├── History
+│   │   │   │   │   └── TaxiBookingHistoryDetailView.swift
+│   │   │   │   ├── MyBooking
+│   │   │   │   │   └── View
+│   │   │   │   │       └── TaxiMyBookingDetailView.swift
+│   │   │   │   ├── OngoingRideView
+│   │   │   │   │   ├── Model
+│   │   │   │   │   │   ├── Request
+│   │   │   │   │   │   │   ├── ApproveRejectItemParam.swift
+│   │   │   │   │   │   │   └── GetBookingApiRequest.swift
+│   │   │   │   │   │   └── Response
+│   │   │   │   │   │       ├── DriverLiveLocationModel.swift
+│   │   │   │   │   │       ├── GetBookingListModel.swift
+│   │   │   │   │   │       ├── SocketBookingStatusModel.swift
+│   │   │   │   │   │       └── SocketPaymentStatusResponse.swift
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── OnGoingCustomView
+│   │   │   │   │   │   │   └── OngoingCustomView.swift
+│   │   │   │   │   │   └── OnGoingRideView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       ├── OngoingRideViewModel.swift
+│   │   │   │   │       ├── OngoingRideviewModel+Api.swift
+│   │   │   │   │       └── OngoingViewModel+Socket.swift
+│   │   │   │   ├── OpenRide
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── CustomViews
+│   │   │   │   │   │   │   └── OpenRideCardView.swift
+│   │   │   │   │   │   ├── OpenRideDeatailView.swift
+│   │   │   │   │   │   └── OpenRideListView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       ├── OpenRideCardViewModel.swift
+│   │   │   │   │       └── OpenRideViewModel.swift
+│   │   │   │   ├── Rental
+│   │   │   │   │   └── RentalPackageCardView.swift
+│   │   │   │   ├── RideFilter
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   └── RideFilterView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── FilterData.swift
+│   │   │   │   ├── RideSelection
+│   │   │   │   │   ├── Model
+│   │   │   │   │   │   ├── Request
+│   │   │   │   │   │   │   ├── BookingRequestModel.swift
+│   │   │   │   │   │   │   ├── MapOverlayData.swift
+│   │   │   │   │   │   │   ├── NearByDriverRequestModel.swift
+│   │   │   │   │   │   │   └── RentalData.swift
+│   │   │   │   │   │   └── Response
+│   │   │   │   │   │       └── FindNearbyDriverModel.swift
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── CustomViews
+│   │   │   │   │   │   │   ├── BidRequestAmountView.swift
+│   │   │   │   │   │   │   ├── NoTripsAvailableView.swift
+│   │   │   │   │   │   │   ├── OptionsTopSwipView.swift
+│   │   │   │   │   │   │   ├── RideListCardView.swift
+│   │   │   │   │   │   │   └── VehicleCapacityView.swift
+│   │   │   │   │   │   ├── RideListWithMapShimmerView.swift
+│   │   │   │   │   │   └── RideListWithMapView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       ├── RideListViewModel.swift
+│   │   │   │   │       ├── RideListViewModel+Api.swift
+│   │   │   │   │       └── RideListViewModel+SetMap.swift
+│   │   │   │   ├── SplitPayment
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   ├── SplitPaymentsView.swift
+│   │   │   │   │   │   └── SplitPaymentUserView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── SplitPaymentsViewModel.swift
+│   │   │   │   ├── SplitPaymentRequest
+│   │   │   │   │   ├── SplitPaymentRequestView.swift
+│   │   │   │   │   └── SplitPaymentRequestViewModel.swift
+│   │   │   │   ├── SurgePricing
+│   │   │   │   │   └── View
+│   │   │   │   │       └── SurgePricingBottomView.swift
+│   │   │   │   └── TripDetailView
+│   │   │   │       └── View
+│   │   │   │           └── TripDetailView.swift
+│   │   │   ├── CommonView
+│   │   │   │   ├── Distance
+│   │   │   │   │   ├── View
+│   │   │   │   │   │   └── AppDistanceView.swift
+│   │   │   │   │   └── ViewModel
+│   │   │   │   │       └── AppDistanceViewModel.swift
+│   │   │   │   ├── DriverView.swift
+│   │   │   │   └── VehicleTerms
+│   │   │   │       └── VehicleTermsSheet.swift
+│   │   │   └── TaxiHome
+│   │   │       ├── Corporate
+│   │   │       │   ├── Model
+│   │   │       │   │   ├── CorporateRequest.swift
+│   │   │       │   │   └── CorporateRequestModel.swift
+│   │   │       │   ├── View
+│   │   │       │   │   └── CorporateRequestView.swift
+│   │   │       │   └── ViewModel
+│   │   │       │       └── CorporateRequestViewModel.swift
+│   │   │       └── Home
+│   │   │           ├── Model
+│   │   │           │   ├── ImageItem.swift
+│   │   │           │   ├── NearByDriverData.swift
+│   │   │           │   ├── Request
+│   │   │           │   │   ├── BusinessCountryCityRequestModel.swift
+│   │   │           │   │   ├── TaxiHomeRequest.swift
+│   │   │           │   │   └── VehicleTypeResquestModel.swift
+│   │   │           │   ├── Response
+│   │   │           │   │   ├── BusinessCityListModel.swift
+│   │   │           │   │   ├── BusinessCountryListModel.swift
+│   │   │           │   │   └── VehicleTypesModel.swift
+│   │   │           │   └── RideOption.swift
+│   │   │           ├── View
+│   │   │           │   ├── RecentAddressCardView.swift
+│   │   │           │   └── TaxiHomeView.swift
+│   │   │           └── ViewModel
+│   │   │               └── TaxiHomeViewModel.swift
+│   │   └── ViewInterface
+│   │       └── ModuleViewInterface.swift
+│   ├── Persistence
+│   │   ├── AppCoreData.xcdatamodeld
+│   │   │   └── Eber.xcdatamodel
+│   │   │       └── contents
+│   │   ├── CoreDatabase.swift
+│   │   ├── CoreDataEntity
+│   │   │   ├── EntityPickupAddress+CoreDataClass.swift
+│   │   │   ├── EntityPickupAddress+CoreDataProperties.swift
+│   │   │   ├── EntityRecentAddress+CoreDataClass.swift
+│   │   │   └── EntityRecentAddress+CoreDataProperties.swift
+│   │   ├── KeyChain.swift
+│   │   └── UserDefaults.swift
+│   ├── Resources
+│   │   ├── All Business
+│   │   │   ├── Assets.xcassets
+│   │   │   │   ├── AccentColor.colorset
+│   │   │   │   │   └── Contents.json
+│   │   │   │   ├── AppIcon.appiconset
+│   │   │   │   │   ├── Contents.json
+│   │   │   │   │   └── hyze_appicon.png
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── whiteLabeling
+│   │   │   │       ├── Contents.json
+│   │   │   │       ├── icLoginBanner.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── ic_login_banner.svg
+│   │   │   │       ├── icLogo.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── hyze_logo-01 1.png
+│   │   │   │       └── icLogoBlack.imageset
+│   │   │   │           ├── Contents.json
+│   │   │   │           └── Group-2.png
+│   │   │   ├── GoogleService-Info.plist
+│   │   │   └── Info.plist
+│   │   ├── Assets.xcassets
+│   │   │   ├── AccentColor.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── Contents.json
+│   │   │   ├── ic_placeholder_cat.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_placeholder_cat.png
+│   │   │   ├── icAgain.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_again_.svg
+│   │   │   ├── icAlert.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_alert.svg
+│   │   │   ├── icAmountMins.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_amount_mins.svg
+│   │   │   ├── icAmountPlus.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_amount_plus.svg
+│   │   │   ├── icArrowDown.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── fe_arrow-up.svg
+│   │   │   ├── icArrowDownLight.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_arrow_down.svg
+│   │   │   ├── icArrowNext.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icArrowNext.svg
+│   │   │   ├── icArrowRight.imageset
+│   │   │   │   ├── arrow-right 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBack.imageset
+│   │   │   │   ├── back.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBag.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.svg
+│   │   │   ├── icBaselineInfo.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_baseline-info.svg
+│   │   │   ├── icBell.imageset
+│   │   │   │   ├── bell (1) 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icBid.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_bid.svg
+│   │   │   ├── icBill.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_bill.svg
+│   │   │   ├── icButtonSearch.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector-2.svg
+│   │   │   ├── icCalander.imageset
+│   │   │   │   ├── calendar-clock 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icCalenderPicker.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_calender_picker.svg
+│   │   │   ├── icCall.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_call.svg
+│   │   │   ├── icCallSupport.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_call_support.svg
+│   │   │   ├── icCancel.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_cancel.svg
+│   │   │   ├── icCancelledTrip.imageset
+│   │   │   │   ├── cancelled_trip.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icCapture.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_capture.svg
+│   │   │   ├── icCard.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_card.svg
+│   │   │   ├── icCartBag.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icCartBag.svg
+│   │   │   ├── icCartDelivery.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── delivery-man 1.svg
+│   │   │   ├── icCartPickup.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── pickup-01 1.svg
+│   │   │   ├── icCash.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_cash.svg
+│   │   │   ├── icChat.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_chat.svg
+│   │   │   ├── icCircleChecked.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_circle_empty.svg
+│   │   │   ├── icCircleEmpty.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.svg
+│   │   │   ├── icCircleFill.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icCircleFill.svg
+│   │   │   ├── icClockFill.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_clock_fill.svg
+│   │   │   ├── icCollapse.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_collapse.svg
+│   │   │   ├── icContactBook.imageset
+│   │   │   │   ├── contact (1) 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icContactUs.imageset
+│   │   │   │   ├── contact_us-01 2.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icCrossRound.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_cross_round.svg
+│   │   │   ├── icCurrentLocationButton.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_current_location.svg
+│   │   │   ├── icCurrentLocationPin.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Group 6.svg
+│   │   │   ├── icDelete.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_delete.svg
+│   │   │   ├── icDelivery.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icDelivery.svg
+│   │   │   ├── icDoc.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_doc.svg
+│   │   │   ├── icDocPin.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_doc_pin.svg
+│   │   │   ├── icDriverPin.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── toolzbuy681111-removebg-preview 6 rotated.svg
+│   │   │   ├── icDropDown.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icDropDown.svg
+│   │   │   ├── icDropoffLocation.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_dropoff_pin.svg
+│   │   │   ├── icDropoffLocations.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── map-marker-plus 1.svg
+│   │   │   ├── icDropoffstopPin.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_dropoffstop_pin.svg
+│   │   │   ├── icDropUp.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icDropUp.svg
+│   │   │   ├── icEmojiSad.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Group (1).svg
+│   │   │   ├── icExpand.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_expand.svg
+│   │   │   ├── icEyeCross.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_eye_cross 1.svg
+│   │   │   ├── icEyeFilled.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_eye_filled 1.svg
+│   │   │   ├── icFacebookLogo.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── image 5.svg
+│   │   │   ├── icFastDelivery.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icFastDelivery.svg
+│   │   │   ├── icFavFillNavBar.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Favorite Container 1.png
+│   │   │   ├── icFavNavBar.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Favorite Container (1).png
+│   │   │   ├── icFilter.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_filter.svg
+│   │   │   ├── icGoogleLogo.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_google_logo.svg
+│   │   │   ├── icHamberg.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.svg
+│   │   │   ├── icHangingAngle.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── hangingAngle.svg
+│   │   │   ├── icHeaderLine.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── line.svg
+│   │   │   ├── icHeart.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── heart 1.svg
+│   │   │   ├── icHeartBorder.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Icon.png
+│   │   │   ├── icHeartFill.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── heart 1.svg
+│   │   │   ├── icHelp.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_Help.svg
+│   │   │   ├── icHighQuality.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icHighQuality.svg
+│   │   │   ├── icHome.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── house-chimney-blank 1.svg
+│   │   │   ├── icInstantDelivery.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icInstantDelivery.svg
+│   │   │   ├── icInvoiceBg.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_invoice_bg.svg
+│   │   │   ├── icLeaf.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icLeaf.svg
+│   │   │   ├── icLeftArrow.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_left_arrow.svg
+│   │   │   ├── icLocationDropoff.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   ├── ic_location_dropoff.svg
+│   │   │   │   └── ic_location_dropoff.svg.zip
+│   │   │   ├── icluggage.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icluggage.png
+│   │   │   ├── icMail.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_mail.svg
+│   │   │   ├── icMenu.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── menu-bar 1.svg
+│   │   │   ├── icMenuContactUs.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_contact_us.svg
+│   │   │   ├── icMenuDelivery.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icMenuDelivery.svg
+│   │   │   ├── icMenuDocuments.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_documents.svg
+│   │   │   ├── icMenuFavDriver.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_fav_driver.svg
+│   │   │   ├── icMenuHistory.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_history.svg
+│   │   │   ├── icMenuMyBookings.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_mybookings.svg
+│   │   │   ├── icMenuPayment.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_payment.svg
+│   │   │   ├── icMenuQuick.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icMenuQuick.svg
+│   │   │   ├── icMenuRedeem.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_referral.svg
+│   │   │   ├── icMenuReferral.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_referral.svg
+│   │   │   ├── icMenuService.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icMenuService.svg
+│   │   │   ├── icMenuSettings.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_menu_settings.svg
+│   │   │   ├── icMenuTaxi.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icMenuTaxi.svg
+│   │   │   ├── icMiniCar.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── mini 1.svg
+│   │   │   ├── icNext.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_next.svg
+│   │   │   ├── icNotes.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_notes.svg
+│   │   │   ├── icNoTripsFound.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_no_trips_found.svg
+│   │   │   ├── icOfferDiscount.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_offer_discount.svg
+│   │   │   ├── icOpenRide.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_open_ride.svg
+│   │   │   ├── icPdf.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── pdf_file.svg
+│   │   │   ├── icPencil.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── pencil.png
+│   │   │   ├── icPickup.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── pickup_location.svg
+│   │   │   ├── icPickupLocationRightArrow.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_pickup_location_right_arrow.svg
+│   │   │   ├── icPin.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── map-pin 2.svg
+│   │   │   ├── icPlus.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── plus 1.svg
+│   │   │   ├── icPlusRound.imageset
+│   │   │   │   ├── add 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icPreAppliedOffer.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── offer-01.svg
+│   │   │   ├── icPrivacyPolicy.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── privacy-policy 1.png
+│   │   │   ├── icQrCode.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Group (2).png
+│   │   │   ├── icRaiseTicket.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icRaiseTicket.svg
+│   │   │   ├── icReceipt.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_receipt.svg
+│   │   │   ├── icRedeemPoints.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_redeem_points.svg
+│   │   │   ├── icReferral.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_referral.svg
+│   │   │   ├── icRefresh.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_referesh.svg
+│   │   │   ├── icReplace.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icRefresh.svg
+│   │   │   ├── icRideRental.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_ride_rental.svg
+│   │   │   ├── icRideSchedule.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_ride_schedule.svg
+│   │   │   ├── icRideSharing.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_ride_sharing.svg
+│   │   │   ├── icRightArrow.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icRightArrow.svg
+│   │   │   ├── icScanner.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── scan_frame-01 2.svg
+│   │   │   ├── icSearch.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_search.svg
+│   │   │   ├── icSearchClock.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_search_clock.svg
+│   │   │   ├── icSearchLocation.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_search_location.svg
+│   │   │   ├── icSearchNavBar.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── search.svg
+│   │   │   ├── icSendMessage.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_send_message.svg
+│   │   │   ├── icServiceBusinessPlaceholder.imageset
+│   │   │   │   ├── company-01 1.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icShare.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_share.svg
+│   │   │   ├── icShareProduct.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.svg
+│   │   │   ├── icShareRoundFill.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── share 1 (1).png
+│   │   │   ├── icSosAlarm.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_sos_alarm.svg
+│   │   │   ├── icSquareCheked.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── evaCheckmarkSquare2Fill0.svg
+│   │   │   ├── icSquareEmpty.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Rectangle 39.svg
+│   │   │   ├── icStarWhite.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_star_white.svg
+│   │   │   ├── icStatusApproved.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   ├── f7_checkmark-seal-fill.png
+│   │   │   │   ├── f7_checkmark-seal-fill@2x.png
+│   │   │   │   └── f7_checkmark-seal-fill@3x.png
+│   │   │   ├── icStatusReject.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── reject.svg
+│   │   │   ├── icSubscription.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Group.svg
+│   │   │   ├── icTaxiHailing.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icTaxiHailing.svg
+│   │   │   ├── icTestBiddingRequest.imageset
+│   │   │   │   ├── avatar_bg.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icTestDriver.imageset
+│   │   │   │   ├── avatar_bg.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icTestPromoOffer.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── default_promocode.svg
+│   │   │   ├── icTimer.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icTimer.svg
+│   │   │   ├── icTransfer.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.png
+│   │   │   ├── icTriangleBottom.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Polygon 4.svg
+│   │   │   ├── icTriangleRight.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Polygon 2.svg
+│   │   │   ├── icUser.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_user.svg
+│   │   │   ├── icUserAvatar.imageset
+│   │   │   │   ├── avatar_bg.svg
+│   │   │   │   └── Contents.json
+│   │   │   ├── icVDots.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── menu-dots-vertical 1.svg
+│   │   │   ├── icVeg.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Group 109.svg
+│   │   │   ├── icVegan.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Group 112.png
+│   │   │   ├── icVehicleCapacity.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_vehicleCapacity.svg
+│   │   │   ├── icVoiceSearch.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── icVoiceSearch.png
+│   │   │   ├── icWallet.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── Vector.svg
+│   │   │   ├── icWalletHistory.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── wallet_history.svg
+│   │   │   ├── icWarning.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── ic_warning.svg
+│   │   │   ├── imgNormal.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── imgNormal.svg
+│   │   │   ├── imgRental.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── imgRental.svg
+│   │   │   ├── imgRideShare.imageset
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── imgRideShare.svg
+│   │   │   └── toolzbuy681111-removebg-preview 6 rotated.imageset
+│   │   │       ├── Contents.json
+│   │   │       └── toolzbuy681111-removebg-preview 6 rotated.svg
+│   │   ├── Dash
+│   │   │   ├── Assets.xcassets
+│   │   │   │   ├── AccentColor.colorset
+│   │   │   │   │   └── Contents.json
+│   │   │   │   ├── AppIcon.appiconset
+│   │   │   │   │   ├── Contents.json
+│   │   │   │   │   └── user_appicon (1).png
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── whiteLabeling
+│   │   │   │       ├── Contents.json
+│   │   │   │       ├── icLoginBanner.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── ic_login_banner.svg
+│   │   │   │       ├── icLogo.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── hyze_dash-01 1.png
+│   │   │   │       └── icLogoBlack.imageset
+│   │   │   │           ├── Contents.json
+│   │   │   │           └── Vector.svg
+│   │   │   ├── Dash-Info.plist
+│   │   │   └── GoogleService-Info.plist
+│   │   ├── Drive
+│   │   │   ├── Assets.xcassets
+│   │   │   │   ├── AccentColor.colorset
+│   │   │   │   │   └── Contents.json
+│   │   │   │   ├── AppIcon.appiconset
+│   │   │   │   │   ├── Contents.json
+│   │   │   │   │   └── user_appicon (1).png
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── whiteLabeling
+│   │   │   │       ├── Contents.json
+│   │   │   │       ├── icLoginBanner.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── ic_login_banner.svg
+│   │   │   │       ├── icLogo.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── hyze_drive-01 1.png
+│   │   │   │       └── icLogoBlack.imageset
+│   │   │   │           ├── Contents.json
+│   │   │   │           └── hyze_drive_icon-01.png
+│   │   │   ├── Drive-Info.plist
+│   │   │   └── GoogleService-Info.plist
+│   │   ├── en.lproj
+│   │   │   └── Localizable.strings
+│   │   ├── Fonts
+│   │   │   ├── Poppins-Black.ttf
+│   │   │   ├── Poppins-Bold.ttf
+│   │   │   ├── Poppins-BoldItalic.ttf
+│   │   │   ├── Poppins-Heavy.ttf
+│   │   │   ├── Poppins-Italic.ttf
+│   │   │   ├── Poppins-Light.ttf
+│   │   │   ├── Poppins-Medium.ttf
+│   │   │   ├── Poppins-Regular.ttf
+│   │   │   ├── Poppins-SemiBold.ttf
+│   │   │   ├── Poppins-Thin.ttf
+│   │   │   └── Poppins-UltraLight.ttf
+│   │   ├── GIF
+│   │   │   ├── ApiRequestModels
+│   │   │   │   ├── Accesiibility
+│   │   │   │   │   ├── AccessibilityApiRequest.swift
+│   │   │   │   │   └── AccessibilityResponseModelModel.swift
+│   │   │   │   └── UploadToken
+│   │   │   │       └── UploadTokenApiRequest.swift
+│   │   │   ├── gifBookingNotFound.gif
+│   │   │   ├── gifDocumentNotFound.gif
+│   │   │   ├── gifDriverNoFound.gif
+│   │   │   ├── gifNotificationNotFound.gif
+│   │   │   ├── gifQdelivery.gif
+│   │   │   ├── gifRestictionIcon.gif
+│   │   │   ├── gifTaxi.gif
+│   │   │   ├── gifUploadApp.gif
+│   │   │   └── gifWalletHistoryNotFound.gif
+│   │   ├── Mart
+│   │   │   ├── Assets.xcassets
+│   │   │   │   ├── AccentColor.colorset
+│   │   │   │   │   └── Contents.json
+│   │   │   │   ├── AppIcon.appiconset
+│   │   │   │   │   ├── Contents.json
+│   │   │   │   │   └── user_appicon.png
+│   │   │   │   ├── Contents.json
+│   │   │   │   └── whiteLabeling
+│   │   │   │       ├── Contents.json
+│   │   │   │       ├── icLoginBanner.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── ic_login_banner.svg
+│   │   │   │       ├── icLogo.imageset
+│   │   │   │       │   ├── Contents.json
+│   │   │   │       │   └── hyzemart_user-01 1.png
+│   │   │   │       └── icLogoBlack.imageset
+│   │   │   │           ├── Contents.json
+│   │   │   │           └── Group.svg
+│   │   │   ├── GoogleService-Info.plist
+│   │   │   └── Mart-Info.plist
+│   │   ├── Preview Content
+│   │   │   └── Preview Assets.xcassets
+│   │   │       ├── Contents.json
+│   │   │       ├── icPlus.imageset
+│   │   │       │   ├── Contents.json
+│   │   │       │   └── plus 1.svg
+│   │   │       └── Image.imageset
+│   │   │           └── Contents.json
+│   │   ├── PreviewJson
+│   │   │   ├── final.json
+│   │   │   ├── MainCatJson.json
+│   │   │   ├── ProductList.json
+│   │   │   └── SubCatList.json
+│   │   ├── ProductCellUIConfig
+│   │   │   └── productCell.json
+│   │   ├── SDK
+│   │   │   ├── ACarousel
+│   │   │   │   ├── ACarousel.swift
+│   │   │   │   ├── ACarouselAutoScroll.swift
+│   │   │   │   ├── ACarouselViewModel.swift
+│   │   │   │   ├── AppLifeCycleModifier.swift
+│   │   │   │   └── View+ReceiveTimer.swift
+│   │   │   ├── FlexibleTags
+│   │   │   │   ├── _FlexibleView.swift
+│   │   │   │   ├── FlexibleView.swift
+│   │   │   │   └── SizeReader.swift
+│   │   │   ├── Marquee
+│   │   │   │   └── Marquee.swift
+│   │   │   ├── MimeType
+│   │   │   │   ├── MimeType.swift
+│   │   │   │   └── Swime.swift
+│   │   │   └── WaterfallGrid
+│   │   │       ├── Environment
+│   │   │       │   ├── GridSyle.swift
+│   │   │       │   ├── PositiveNumber.swift
+│   │   │       │   └── ScrollOptions.swift
+│   │   │       ├── Preference
+│   │   │       │   ├── ElementPreference.swift
+│   │   │       │   └── PreferenceSetter.swift
+│   │   │       ├── View+GridStyle.swift
+│   │   │       ├── View+ScrollOptions.swift
+│   │   │       └── WaterfallGrid.swift
+│   │   └── Servizo
+│   │       ├── Assets.xcassets
+│   │       │   ├── AccentColor.colorset
+│   │       │   │   └── Contents.json
+│   │       │   ├── AppIcon.appiconset
+│   │       │   │   ├── app_icon.png
+│   │       │   │   └── Contents.json
+│   │       │   ├── Contents.json
+│   │       │   └── whiteLabeling
+│   │       │       ├── Contents.json
+│   │       │       ├── icLoginBanner.imageset
+│   │       │       │   ├── Contents.json
+│   │       │       │   └── ic_login_banner.svg
+│   │       │       ├── icLogo.imageset
+│   │       │       │   ├── Contents.json
+│   │       │       │   └── hyze_servizo-01 1.png
+│   │       │       └── icLogoBlack.imageset
+│   │       │           ├── Contents.json
+│   │       │           └── Login_icon.png
+│   │       ├── GoogleService-Info.plist
+│   │       └── Servizo-Info.plist
+│   ├── UserApp.entitlements
+│   └── Utility
+│       ├── AnalyticsManager.swift
+│       ├── APIManager
+│       │   └── APIServices
+│       │       ├── APIBaseURL.swift
+│       │       ├── APIEndUrl.swift
+│       │       ├── APIHttpMethods.swift
+│       │       ├── APIRequestType.swift
+│       │       ├── APIService+Combine.swift
+│       │       ├── GeneralResponseModel.swift
+│       │       └── NetworkError.swift
+│       ├── AppEnums.swift
+│       ├── CommonViewModel.swift
+│       ├── KeyboardHeightHelper.swift
+│       ├── LiveActivityManager.swift
+│       ├── LocalizeHelper
+│       │   ├── LocalizeKey.swift
+│       │   ├── LocalizeString.swift
+│       │   └── Model
+│       │       ├── RequestModel
+│       │       │   ├── GetStringRequestModel.swift
+│       │       │   └── LocalizedStringRequestModel.swift
+│       │       └── ResponseModel
+│       │           └── LocalizedStringModel.swift
+│       ├── NetworkUtility.swift
+│       ├── NotificationAudioDownloder.swift
+│       ├── Payment Manager
+│       │   ├── ApplePayManager.swift
+│       │   ├── PaymentIntentRequest.swift
+│       │   ├── PaymentIntentRequestModel.swift
+│       │   ├── PaymentIntentResponse.swift
+│       │   └── PaymentManager.swift
+│       ├── SlideModifier.swift
+│       ├── Socket
+│       │   ├── Model
+│       │   │   ├── SocketSendLocationModel.swift
+│       │   │   └── SocketSignUpParam.swift
+│       │   └── SocketHelper.swift
+│       └── Utility.swift
+├── Hyze.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.pbxproj.orig
+│   ├── project.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   ├── xcshareddata
+│   │   │   ├── IDEWorkspaceChecks.plist
+│   │   │   └── swiftpm
+│   │   │       ├── configuration
+│   │   │       └── Package.resolved
+│   │   └── xcuserdata
+│   │       └── elluminati.xcuserdatad
+│   │           ├── IDEFindNavigatorScopes.plist
+│   │           ├── UserInterfaceState (1).xcuserstate
+│   │           └── UserInterfaceState.xcuserstate
+│   ├── xcshareddata
+│   │   └── xcschemes
+│   │       ├── Hyze All.xcscheme
+│   │       ├── Hyze Dash.xcscheme
+│   │       ├── Hyze Servizo.xcscheme
+│   │       ├── HyzeDrive.xcscheme
+│   │       └── HyzeMart.xcscheme
+│   └── xcuserdata
+│       └── elluminati.xcuserdatad
+│           ├── xcdebugger
+│           │   └── Breakpoints_v2.xcbkptlist
+│           └── xcschemes
+│               └── xcschememanagement.plist
+├── NotificationService
+│   ├── Info-Dash.plist
+│   ├── Info-Drive.plist
+│   ├── Info-Mart.plist
+│   ├── Info-Servizo.plist
+│   ├── Info.plist
+│   └── NotificationService.swift
+├── README.md
+└── sonar-project.properties
+
+724 directories, 1228 files
