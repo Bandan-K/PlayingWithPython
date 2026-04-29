@@ -1,7 +1,7 @@
 # ==========================================
 # SETTINGS - UPDATE THESE PATHS IF NEEDED
 # ==========================================
-PROJECT_ROOT = "/Users/elluminati/Documents/Product/Hyze 2/driver"
+PROJECT_ROOT = "/Users/elluminati/Documents/Product/Hyze 2/merchant"
 # ==========================================
 
 import os

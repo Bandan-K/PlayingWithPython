@@ -1,4 +1,6 @@
 {
     "/Users/elluminati/Documents/Product/Hyze 2/driver_strings": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Resources/en.lproj/Localizable.strings",
-    "/Users/elluminati/Documents/Product/Hyze 2/driver_vars": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Utility/LocalizeHelper/LocalizeKey.swift"
+    "/Users/elluminati/Documents/Product/Hyze 2/driver_vars": "/Users/elluminati/Documents/Product/Hyze 2/driver/HyzeProvider/Utility/LocalizeHelper/LocalizeKey.swift",
+    "/Users/elluminati/Documents/Product/Hyze 2/merchant_strings": "/Users/elluminati/Documents/Product/Hyze 2/merchant/QCMerchant/Resources/en.lproj/Localizable.strings",
+    "/Users/elluminati/Documents/Product/Hyze 2/merchant_vars": "/Users/elluminati/Documents/Product/Hyze 2/merchant/QCMerchant/Utility/LocalizeHelper/LocalizeKey.swift"
 }
